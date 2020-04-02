@@ -1,0 +1,372 @@
+/* Javadoc style sheet */
+
+/* Define colors, fonts and other style attributes here to override the defaults */
+
+/* Page background color */
+body { background-color: #FFFFFF }
+
+/* Headings */
+h1 { font-size: 145% }
+
+/* Table colors */
+.TableHeadingColor     { background: #CCCCFF } /* Dark mauve */
+.TableSubHeadingColor  { background: #EEEEFF } /* Light mauve */
+.TableRowColor         { background: #FFFFFF } /* White */
+
+/* Font used in left-hand frame lists */
+.FrameTitleFont   { font-size: 100%; font-family: Helvetica, Arial, sans-serif }
+.FrameHeadingFont { font-size:  90%; font-family: Helvetica, Arial, sans-serif }
+.FrameItemFont    { font-size:  90%; font-family: Helvetica, Arial, sans-serif }
+
+/* Navigation bar fonts and colors */
+.NavBarCell1    { background-color:#EEEEFF;} /* Light mauve */
+.NavBarCell1Rev { background-color:#00008B;} /* Dark Blue */
+.NavBarFont1    { font-family: Arial, Helvetica, sans-serif; color:#000000;}
+.NavBarFont1Rev { font-family: Arial, Helvetica, sans-serif; color:#FFFFFF;}
+
+.NavBarCell2    { font-family: Arial, Helvetica, sans-serif; background-color:#FFFFFF;}
+.NavBarCell3    { font-family: Arial, Helvetica, sans-serif; background-color:#FFFFFF;}
+
+
+
+body
+{
+	font-size: 12px;
+	vertical-align: baseline;
+	color: navy;
+	font-family: verdana, Tahoma, helvetica, arial;
+	list-style-type: decimal;
+	letter-spacing: normal;
+	background-color: white;
+	text-align: left;
+}
+
+A 
+{
+	text-decoration:underline;
+} 
+
+A:active 
+{
+	text-decoration:underline;
+} 
+
+A:visited 
+{
+	text-decoration:underline;
+} 
+
+A:link 
+{
+	text-decoration:underline;
+} 
+
+A:hover 
+{
+	text-decoration:none;
+}
+
+.aCenter
+{
+	font-size: 12px;
+	font-family: verdana, Tahoma, helvetica, arial;
+	text-align: center;
+}
+
+.aLeft
+{
+	font-size: 12px;
+	font-family: verdana, Tahoma, helvetica, arial;
+	text-align: left;
+}
+
+.aRight
+{
+	font-size: 12px;
+	font-family: verdana, Tahoma, helvetica, arial;
+	text-align: right;
+}
+
+.pageborder
+{
+	border: navy 1px solid;
+	border-right: navy 1px solid;
+	border-top: navy 1px solid;
+	border-left: navy 1px solid;
+	border-bottom: navy 1px solid;
+	width: 762px;
+}
+
+.normal
+{
+	padding-right: 7px;
+	padding-left: 7px;
+	font-size: 12px;
+	color: navy;
+	font-family: verdana, Tahoma, helvetica, arial;
+	list-style-type: decimal;
+	letter-spacing: normal;
+	background-color: white;
+	text-align: left;
+}
+
+
+.normal body
+{
+	padding-right: 7px;
+	padding-left: 7px;
+	font-size: 12px;
+	color: navy;
+	font-family: verdana, Tahoma, helvetica, arial;
+	list-style-type: decimal;
+	letter-spacing: normal;
+	background-color: white;
+	text-align: left;
+}
+
+.normal A
+{
+	color: royalblue;
+	text-decoration: underline;
+} 
+
+.normal A:active 
+{
+	color: royalblue;
+	text-decoration:underline;
+} 
+
+.normal A:visited 
+{
+	color: royalblue;
+	text-decoration:underline;
+} 
+
+.normal A:link 
+{
+	color: royalblue;
+	text-decoration:underline;
+} 
+
+.normal A:hover 
+{
+	color: royalblue;
+	text-decoration:none;
+}
+
+.notice
+{
+	font-weight: normal;
+	font-size: 11px;
+	text-transform: none;
+	color: darkgray;
+	font-family: Tahoma, verdana, helvetica, arial;
+	text-decoration: none;
+}
+
+.notice body
+{
+	font-weight: normal;
+	font-size: 11px;
+	text-transform: none;
+	color: darkgray;
+	font-family: Tahoma, verdana, helvetica, arial;
+	text-decoration: none;
+}
+
+.notice A
+{
+	color: royalblue;
+	text-decoration:underline;
+} 
+
+.notice A:active 
+{
+	color: royalblue;
+	text-decoration:underline;
+} 
+
+.notice A:visited 
+{
+	color: royalblue;
+	text-decoration:underline;
+} 
+
+.notice A:link 
+{
+	color: royalblue;
+	text-decoration:underline;
+} 
+
+.notice A:hover 
+{
+	color: royalblue;
+	text-decoration:none;
+}
+
+.subnav
+{
+	padding-right: 7px;
+	padding-left: 7px;
+	font-weight: bold;
+	font-size: 12px;
+	background-image: url(http://www.aspose.com/images/imgNav.gif);
+	color: darkblue;
+	background-repeat: repeat-x;
+	font-family: verdana, helvetica, Tahoma, arial;
+	text-decoration: none;
+}
+
+.subnav body
+{
+	padding-right: 7px;
+	padding-left: 7px;
+	font-weight: bold;
+	font-size: 12px;
+	background-image: url(http://www.aspose.com/images/imgNav.gif);
+	color: darkblue;
+	background-repeat: repeat-x;
+	font-family: verdana, helvetica, Tahoma, arial;
+	text-decoration: none;
+}
+
+.subnav A
+{
+	color: royalblue;
+	text-decoration: underline;
+} 
+
+.subnav A:active 
+{
+	color: royalblue;
+	text-decoration:underline;
+} 
+
+.subnav A:visited 
+{
+	color: royalblue;
+	text-decoration:underline;
+} 
+
+.subnav A:link 
+{
+	color: royalblue;
+	text-decoration:underline;
+} 
+
+.subnav A:hover 
+{
+	color: royalblue;
+	text-decoration:none;
+}
+
+.topnav
+{
+	font-weight: bold;
+	font-size: 12px;
+	text-transform: capitalize;
+	text-decoration:none;
+	color: white;
+	font-family: verdana, helvetica, Tahoma, arial;
+	background-color: navy;
+}
+
+.topnav body
+{
+	font-weight: bold;
+	font-size: 12px;
+	text-transform: capitalize;
+	text-decoration:none;
+	color: white;
+	font-family: verdana, helvetica, Tahoma, arial;
+}
+
+.topnav A 
+{
+	color: white;
+	text-decoration:none;
+} 
+
+.topnav A:active 
+{
+	color: white;
+	text-decoration:none;
+} 
+
+.topnav A:visited 
+{
+	color: white;
+	text-decoration:none;
+} 
+
+.topnav A:link 
+{
+	color: white;
+	text-decoration:none;
+} 
+
+.topnav A:hover 
+{
+	color: white;
+	text-decoration:underline;
+}
+
+.productnav
+{
+	font-weight: bold;
+	font-size: 11px;
+	color: navy;
+	font-family: helvetica, verdana, Tahoma, arial;
+	text-decoration: none;
+}
+
+.productnav body
+{
+	font-weight: bold;
+	font-size: 11px;
+	color: navy;
+	font-family: helvetica, verdana, Tahoma, arial;
+	text-decoration: none;
+}
+
+.productnav A
+{
+	color: navy;
+	text-decoration: underline;
+} 
+
+.productnav A:active 
+{
+	color: navy;
+	text-decoration:underline;
+} 
+
+.productnav A:visited 
+{
+	color: navy;
+	text-decoration:underline;
+} 
+
+.productnav A:link 
+{
+	color: navy;
+	text-decoration:underline;
+} 
+
+.productnav A:hover 
+{
+	color: royalblue;
+	text-decoration:none;
+}
+
+div.footer
+{
+	padding-bottom: 5px;
+	font-style: italic;
+}
+code
+{
+	font-family:	Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
