@@ -46,6 +46,7 @@ Aspose.Cells for PHP via Java consists of 2 individual parts, the script wrapper
 6. Copy aspose.cells.php and example.php to `\java\apache-tomcat-9.0.24\webapps\JavaBridge`.
 7. Open http://localhost:8080/JavaBridge/example.php or create your own PHP file as follows.
 
+You will find the Jar and PHP library in `vendor/aspose/cells` folder.
 
 ### Sample Usage
 
