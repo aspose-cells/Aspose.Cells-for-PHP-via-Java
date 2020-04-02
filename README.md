@@ -1,7 +1,9 @@
 # PHP Library for Excel File Formats
+
 Aspose.Cells for PHP via Java is a feature-rich API to create, process, manipulate & convert Excel & OpenOffice spreadsheets using PHP. API offers Excel file generation, conversion, worksheets styling, Pivot Table & chart management & rendering, reliable formula calculation engine and much more - all without any dependency on Office Automation or Microsoft Excel®.
 
 ## PHP Excel Library Features
+
 - Convert spreadsheets to different formats including PDF, XPS, images & other Excel file formats.
 - Generate Excel files via API or using templates.
 - Create Pivot Tables, charts, sparklines & conditional formatting rules on-the-fly.
@@ -13,16 +15,19 @@ Aspose.Cells for PHP via Java is a feature-rich API to create, process, manipula
 - Populate worksheets through Smart Markers.
 
 ## Read & Write Excel Files
-*Microsoft Excel:* XLS, XLSX, XLSB, XLTX, XLTM, XLSM, XML 
-*OpenOffice:* ODS 
-*Text:* CSV, Tab-Delimited, TXT 
-*Web:* HTML, MHTML
+
+**Microsoft Excel:** XLS, XLSX, XLSB, XLTX, XLTM, XLSM, XML 
+**OpenOffice:** ODS 
+**Text:** CSV, Tab-Delimited, TXT 
+**Web:** HTML, MHTML
 
 ## Save Excel Files As
-*Fixed Layout:* PDF, XPS 
-*Images:* JPEG, PNG, BMP, SVG, TIFF, GIF, EMF
+
+**Fixed Layout:** PDF, XPS 
+**Images:** JPEG, PNG, BMP, SVG, TIFF, GIF, EMF
 
 ## Getting Started with Aspose.Cells for PHP via Java
+
 Aspose.Cells for PHP via Java consists of 2 individual parts, the script wrapper (aspose.cells.php) and Aspose.Cells for Java. These components communicate via PHP/Java Bridge whereas both require separate environments & processes for execution.
 
 ### Prerequisites
@@ -31,7 +36,7 @@ Aspose.Cells for PHP via Java consists of 2 individual parts, the script wrapper
 3. Web Server like Tomcat
 4. PHP
 
-### Manual Installation
+### Installation
 
 1. Install Tomcat on any location such as `\java\apache-tomcat-9.0.24`.
 2. Copy JavaBridge.war to `webapps` folder of Tomcat such as `\java\apache-tomcat-9.0.24\webapps`.
@@ -42,7 +47,7 @@ Aspose.Cells for PHP via Java consists of 2 individual parts, the script wrapper
 7. Open http://localhost:8080/JavaBridge/examples.php or create your own PHP file as follows.
 
 
-### Sample usage
+### Sample Usage
 
 ```php
 <?php
