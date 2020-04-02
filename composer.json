@@ -3,10 +3,10 @@
 	"type" : "library",
 	"description" : "A PHP library to create, convert & manipulate Excel® files while using Aspose.Cells for Java at core, and PHP-Java Bridge for communication.",
 	"keywords" : [
-		"Excel API", "PHP Spreadsheet API", "aspose", "cells", "java"
+		"Excel API", "PHP Spreadsheet API", "aspose.cells", "Excel PHP", "PHP via Java"
 	],
 	"homepage" : "https://products.aspose.com/cells/php-java",
-	"license" : "https://company.aspose.com/legal/eula",
+	"license" : "proprietary",
 	"authors" : [{
 			"name" : "Aspose",
 			"homepage" : "https://products.aspose.com/cells/php-java"
