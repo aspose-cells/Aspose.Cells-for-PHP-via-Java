@@ -58,7 +58,7 @@ Aspose.Cells for PHP via Java is platform independent API and can be used on any
 
 ## Get Started with Aspose.Cells for PHP via Java
 
-Aspose.Cells for PHP via Java consists of two individual parts, the script wrapper (aspose.cells.php) and Aspose.Cells for Java. These components communicate via PHP/Java Bridge whereas both require separate environments & processes for execution. For the detailed instructions please visit [Installation and Usage](https://docs.aspose.com/display/cellsjava/Setup+and+Installation+Guidelines#SetupandInstallationGuidelines-InstallationandUsage) documentation page.
+Aspose.Cells for PHP via Java consists of two individual parts, the script wrapper (aspose.cells.php) and Aspose.Cells for Java. These components communicate via PHP/Java Bridge whereas both require separate environments & processes for execution. For the detailed instructions please visit [Installation and Usage](https://docs.aspose.com/cells/java/setup-and-installation-guidelines/) documentation page.
 
 ## Create a New XLSX File and Insert Data using Java
 
@@ -84,4 +84,4 @@ echo "\n";
 ?>
 ```
 
-[Product Page](https://products.aspose.com/cells/php-java) | [Documentation](https://docs.aspose.com/display/cellsphpjava/Aspose.Cells+for+PHP+via+Java+Home) | [API Reference](https://apireference.aspose.com/php/cells) | [Code Examples](https://github.com/aspose-cells/Aspose.Cells-for-PHP-via-Java) | [Blog](https://blog.aspose.com/category/cells/) | [Free Support](https://forum.aspose.com/c/cells) | [Temporary License](https://purchase.aspose.com/temporary-license)
+[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/cells/php-java) | [Docs](https://docs.aspose.com/cells/phpjava/) | [API Reference](https://apireference.aspose.com/php/cells) | [Examples](https://github.com/aspose-cells/Aspose.Cells-for-PHP-via-Java) | [Blog](https://blog.aspose.com/category/cells/) | [Free Support](https://forum.aspose.com/c/cells) | [Temporary License](https://purchase.aspose.com/temporary-license)
