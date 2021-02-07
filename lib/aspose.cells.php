@@ -177,6 +177,7 @@ final class AutoShapeType {
 	const RIGHT_BRACE = 88;
 	const RIGHT_BRACKET = 86;
 	const RIGHT_TRIANGLE = 6;
+	const ROUND_CALLOUT = 2108;
 	const ROUND_DIAGONAL_CORNER_RECTANGLE = 2058;
 	const ROUND_SAME_SIDE_CORNER_RECTANGLE = 2057;
 	const ROUND_SINGLE_CORNER_RECTANGLE = 2056;
@@ -207,6 +208,10 @@ final class AutoShapeType {
 	const TEARDROP = 2063;
 	const TEXT_ARCH_DOWN_CURVE = 145;
 	const TEXT_ARCH_DOWN_POUR = 149;
+	const TEXT_ARCH_LEFT_CURVE = 2111;
+	const TEXT_ARCH_LEFT_POUR = 2109;
+	const TEXT_ARCH_RIGHT_CURVE = 2112;
+	const TEXT_ARCH_RIGHT_POUR = 2110;
 	const TEXT_ARCH_UP_CURVE = 144;
 	const TEXT_ARCH_UP_POUR = 148;
 	const TEXT_BOX = 202;
@@ -499,6 +504,14 @@ final class ChartSplitType {
 	const PERCENT_VALUE = 2;
 	const POSITION = 0;
 	const VALUE = 1;
+};
+
+final class ChartTextDirectionType {
+	const HORIZONTAL = 0;
+	const ROTATE_270 = 3;
+	const ROTATE_90 = 2;
+	const STACKED = 4;
+	const VERTICAL = 1;
 };
 
 final class ChartType {
@@ -796,8 +809,9 @@ final class CredentialsMethodType {
 
 final class CrossType {
 	const AUTOMATIC = 0;
-	const CUSTOM = 2;
+	const CUSTOM = 3;
 	const MAXIMUM = 1;
+	const MINIMUM = 2;
 };
 
 final class DataBarAxisPosition {
@@ -847,6 +861,16 @@ final class DataLabelShapeType {
 	const WEDGE_ROUND_RECT_CALLOUT = 8;
 };
 
+final class DataLabelsSeparatorType {
+	const AUTO = 0;
+	const COMMA = 2;
+	const CUSTOM = 6;
+	const NEW_LINE = 5;
+	const PERIOD = 4;
+	const SEMICOLON = 3;
+	const SPACE = 1;
+};
+
 final class DataLablesSeparatorType {
 	const AUTO = 0;
 	const COMMA = 2;
@@ -864,6 +888,12 @@ final class DateTimeGroupingType {
 	const MONTH = 3;
 	const SECOND = 4;
 	const YEAR = 5;
+};
+
+final class DefaultEditLanguage {
+	const AUTO = 0;
+	const CJK = 2;
+	const ENGLISH = 1;
 };
 
 final class DirectoryType {
@@ -903,40 +933,41 @@ final class DropButtonStyle {
 
 final class DynamicFilterType {
 	const ABOVE_AVERAGE = 0;
-	const APRIL = 12;
-	const AUGUST = 16;
+	const APRIL = 13;
+	const AUGUST = 17;
 	const BELOW_AVERAGE = 1;
 	const DECEMBER = 9;
+	const FEBRUARY = 11;
 	const FEBRURAY = 10;
 	const JANUARY = 6;
-	const JULY = 15;
-	const JUNE = 14;
+	const JULY = 16;
+	const JUNE = 15;
 	const LAST_MONTH = 2;
 	const LAST_QUARTER = 3;
 	const LAST_WEEK = 4;
 	const LAST_YEAR = 5;
-	const MARCH = 11;
-	const MAY = 13;
-	const NEXT_MONTH = 18;
-	const NEXT_QUARTER = 19;
-	const NEXT_WEEK = 20;
-	const NEXT_YEAR = 21;
-	const NONE = 22;
+	const MARCH = 12;
+	const MAY = 14;
+	const NEXT_MONTH = 19;
+	const NEXT_QUARTER = 20;
+	const NEXT_WEEK = 21;
+	const NEXT_YEAR = 22;
+	const NONE = 23;
 	const NOVEMBER = 8;
 	const OCTOBER = 7;
-	const QUARTER_1 = 23;
-	const QUARTER_2 = 24;
-	const QUARTER_3 = 25;
-	const QUARTER_4 = 26;
-	const SEPTEMBER = 17;
-	const THIS_MONTH = 27;
-	const THIS_QUARTER = 28;
-	const THIS_WEEK = 29;
-	const THIS_YEAR = 30;
-	const TODAY = 31;
-	const TOMORROW = 32;
-	const YEAR_TO_DATE = 33;
-	const YESTERDAY = 34;
+	const QUARTER_1 = 24;
+	const QUARTER_2 = 25;
+	const QUARTER_3 = 26;
+	const QUARTER_4 = 27;
+	const SEPTEMBER = 18;
+	const THIS_MONTH = 28;
+	const THIS_QUARTER = 29;
+	const THIS_WEEK = 30;
+	const THIS_YEAR = 31;
+	const TODAY = 32;
+	const TOMORROW = 33;
+	const YEAR_TO_DATE = 34;
+	const YESTERDAY = 35;
 };
 
 final class EmfRenderSetting {
@@ -993,14 +1024,15 @@ final class ExceptionType {
 	const LICENSE = 9;
 	const LIMITATION = 10;
 	const PAGE_SETUP = 11;
+	const PERMISSION = 19;
 	const PIVOT_TABLE = 12;
 	const SHAPE = 13;
 	const SHEET_NAME = 15;
 	const SHEET_TYPE = 16;
 	const SPARKLINE = 14;
-	const UNDISCLOSED_INFORMATION = 21;
-	const UNSUPPORTED_FEATURE = 19;
-	const UNSUPPORTED_STREAM = 20;
+	const UNDISCLOSED_INFORMATION = 22;
+	const UNSUPPORTED_FEATURE = 20;
+	const UNSUPPORTED_STREAM = 21;
 };
 
 final class ExternalLinkType {
@@ -1378,6 +1410,7 @@ final class IconSetType {
 	const ARROWS_GRAY_4 = 9;
 	const ARROWS_GRAY_5 = 14;
 	const BOXES_5 = 18;
+	const COLOR_SMILIES_3 = 23;
 	const CUSTOM_SET = 21;
 	const FLAGS_3 = 2;
 	const NONE = 20;
@@ -1386,6 +1419,7 @@ final class IconSetType {
 	const RATING_5 = 16;
 	const RED_TO_BLACK_4 = 11;
 	const SIGNS_3 = 3;
+	const SMILIES_3 = 22;
 	const STARS_3 = 17;
 	const SYMBOLS_3 = 4;
 	const SYMBOLS_32 = 5;
@@ -1401,6 +1435,7 @@ final class ImageType {
 	const GIF = 66;
 	const GLTF = 70;
 	const JPEG = 5;
+	const OFFICE_COMPATIBLE_EMF = 71;
 	const PICT = 4;
 	const PNG = 6;
 	const SVG = 68;
@@ -1885,6 +1920,13 @@ final class PageOrientationType {
 	const PORTRAIT = 1;
 };
 
+final class PaneStateType {
+	const FROZEN = 0;
+	const FROZEN_SPLIT = 1;
+	const NORMAL = 3;
+	const SPLIT = 2;
+};
+
 final class PaperSizeType {
 	const CUSTOM = 0;
 	const PAPER_10_X_11 = 45;
@@ -2320,6 +2362,11 @@ final class PlacementType {
 	const MOVE_AND_SIZE = 2;
 };
 
+final class PlotDataByType {
+	const COLUMN = 1;
+	const ROW = 0;
+};
+
 final class PlotEmptyCellsType {
 	const INTERPOLATED = 2;
 	const NOT_PLOTTED = 0;
@@ -2546,12 +2593,6 @@ final class ReflectionEffectType {
 	const TIGHT_REFLECTION_TOUCHING = 2;
 };
 
-final class RegexType {
-	const NONE = 0;
-	const REGEX = 2;
-	const WILDCARDS = 1;
-};
-
 final class RenameStrategy {
 	const DIGIT = 1;
 	const EXCEPTION = 0;
@@ -2564,10 +2605,37 @@ final class ResourceLoadingType {
 	const USER_PROVIDED = 2;
 };
 
+final class RevisionActionType {
+	const ADD = 0;
+	const DELETE = 1;
+	const DELETE_COLUMN = 2;
+	const DELETE_ROW = 3;
+	const INSERT_COLUMN = 4;
+	const INSERT_ROW = 5;
+};
+
+final class RevisionType {
+	const AUTO_FORMAT = 3;
+	const CHANGE_CELLS = 2;
+	const COMMENT = 5;
+	const CUSTOM_VIEW = 0;
+	const DEFINED_NAME = 1;
+	const FORMAT = 6;
+	const INSERT_DELETE = 11;
+	const INSERT_SHEET = 7;
+	const MERGE_CONFLICT = 4;
+	const MOVE_CELLS = 8;
+	const QUERY_TABLE = 10;
+	const RENAME_SHEET = 12;
+	const UNDO = 9;
+	const UNKNOWN = 13;
+};
+
 final class SaveFormat {
 	const AUTO = 0;
 	const CSV = 1;
 	const DIF = 30;
+	const DOCX = 62;
 	const EXCEL_97_TO_2003 = 5;
 	const FODS = 59;
 	const HTML = 12;
@@ -2576,6 +2644,7 @@ final class SaveFormat {
 	const NUMBERS = 56;
 	const ODS = 14;
 	const PDF = 13;
+	const PPTX = 61;
 	const SPREADSHEET_ML = 15;
 	const SVG = 22;
 	const SXC = 60;
@@ -2596,6 +2665,11 @@ final class SelectionType {
 	const EXTEND = 2;
 	const MULTI = 1;
 	const SINGLE = 0;
+};
+
+final class ShapeAnchorType {
+	const ONE_CELL_ANCHOR = 1;
+	const TWO_CELL_ANCHOR = 0;
 };
 
 final class ShapeLockType {
@@ -2628,8 +2702,9 @@ final class ShapePathType {
 final class SheetType {
 	const BIFF_4_MACRO = 3;
 	const CHART = 2;
-	const DIALOG = 5;
-	const OTHER = 4;
+	const DIALOG = 6;
+	const INTERNATIONAL_MACRO = 4;
+	const OTHER = 5;
 	const VB = 0;
 	const WORKSHEET = 1;
 };
@@ -2834,7 +2909,6 @@ final class StyleModifyFlag {
 	const RIGHT_BORDER = 3;
 	const ROTATION = 28;
 	const SHRINK_TO_FIT = 30;
-	const SPACING = 49;
 	const TEXT_DIRECTION = 31;
 	const TOP_BORDER = 4;
 	const VERTICAL_ALIGNMENT = 26;
@@ -3158,10 +3232,13 @@ final class TimePeriodType {
 	const LAST_7_DAYS = 3;
 	const LAST_MONTH = 5;
 	const LAST_WEEK = 8;
+	const LAST_YEAR = 11;
 	const NEXT_MONTH = 6;
 	const NEXT_WEEK = 9;
+	const NEXT_YEAR = 12;
 	const THIS_MONTH = 4;
 	const THIS_WEEK = 7;
+	const THIS_YEAR = 10;
 	const TODAY = 0;
 	const TOMORROW = 2;
 	const YESTERDAY = 1;
@@ -4006,6 +4083,13 @@ class DigitalSignatureCollection extends Java {
 	}
 }
 
+class DocxSaveOptions extends Java {
+	static private $_className = "com.aspose.cells.DocxSaveOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
 class ExportRangeToJsonOptions extends Java {
 	static private $_className = "com.aspose.cells.ExportRangeToJsonOptions";
 	function __construct(...$argv) {
@@ -4198,6 +4282,21 @@ class LoadOptions extends Java {
 	}
 }
 
+class LocaleNumberFormatConstants extends Java {
+	static private $_className = "com.aspose.cells.LocaleNumberFormatConstants";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+
+	static function getRegionDecimalSeparator(...$argv) {
+		return Java(self::$_className)->getRegionDecimalSeparator(...$argv);
+	}
+
+	static function getRegionGroupSeparator(...$argv) {
+		return Java(self::$_className)->getRegionGroupSeparator(...$argv);
+	}
+}
+
 class MarkdownSaveOptions extends Java {
 	static private $_className = "com.aspose.cells.MarkdownSaveOptions";
 	function __construct(...$argv) {
@@ -4325,8 +4424,22 @@ class PivotPageFields extends Java {
 	}
 }
 
-class PowerQueryFormulaItemCollection extends Java {
-	static private $_className = "com.aspose.cells.PowerQueryFormulaItemCollection";
+class PowerQueryFormulaParameter extends Java {
+	static private $_className = "com.aspose.cells.PowerQueryFormulaParameter";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class PowerQueryFormulaParameterCollection extends Java {
+	static private $_className = "com.aspose.cells.PowerQueryFormulaParameterCollection";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class PptxSaveOptions extends Java {
+	static private $_className = "com.aspose.cells.PptxSaveOptions";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
@@ -4627,14 +4740,6 @@ class CellsHelper extends Java {
 		return Java(self::$_className)->createSafeSheetName(...$argv);
 	}
 
-	static function detectFileFormat(...$argv) {
-		return Java(self::$_className)->detectFileFormat(...$argv);
-	}
-
-	static function detectLoadFormat(...$argv) {
-		return Java(self::$_className)->detectLoadFormat(...$argv);
-	}
-
 	static function getAltStartPath(...$argv) {
 		return Java(self::$_className)->getAltStartPath(...$argv);
 	}
@@ -4653,18 +4758,6 @@ class CellsHelper extends Java {
 
 	static function getDoubleFromDateTime(...$argv) {
 		return Java(self::$_className)->getDoubleFromDateTime(...$argv);
-	}
-
-	static function getFontDir(...$argv) {
-		return Java(self::$_className)->getFontDir(...$argv);
-	}
-
-	static function getFontDirs(...$argv) {
-		return Java(self::$_className)->getFontDirs(...$argv);
-	}
-
-	static function getFontFiles(...$argv) {
-		return Java(self::$_className)->getFontFiles(...$argv);
 	}
 
 	static function getLibraryPath(...$argv) {
@@ -4691,8 +4784,8 @@ class CellsHelper extends Java {
 		return Java(self::$_className)->getVersion(...$argv);
 	}
 
-	static function isProtectedByRMS(...$argv) {
-		return Java(self::$_className)->isProtectedByRMS(...$argv);
+	static function isCloudPlatform(...$argv) {
+		return Java(self::$_className)->isCloudPlatform(...$argv);
 	}
 
 	static function mergeFiles(...$argv) {
@@ -4711,24 +4804,16 @@ class CellsHelper extends Java {
 		Java(self::$_className)->setAltStartPath(...$argv);
 	}
 
+	static function setCloudPlatform(...$argv) {
+		Java(self::$_className)->setCloudPlatform(...$argv);
+	}
+
 	static function setCustomImplementationFactory(...$argv) {
 		Java(self::$_className)->setCustomImplementationFactory(...$argv);
 	}
 
 	static function setDPI(...$argv) {
 		Java(self::$_className)->setDPI(...$argv);
-	}
-
-	static function setFontDir(...$argv) {
-		Java(self::$_className)->setFontDir(...$argv);
-	}
-
-	static function setFontDirs(...$argv) {
-		Java(self::$_className)->setFontDirs(...$argv);
-	}
-
-	static function setFontFiles(...$argv) {
-		Java(self::$_className)->setFontFiles(...$argv);
 	}
 
 	static function setLibraryPath(...$argv) {
@@ -4829,6 +4914,10 @@ class FileFormatUtil extends Java {
 
 	static function saveFormatToLoadFormat(...$argv) {
 		return Java(self::$_className)->saveFormatToLoadFormat(...$argv);
+	}
+
+	static function verifyPassword(...$argv) {
+		return Java(self::$_className)->verifyPassword(...$argv);
 	}
 }
 

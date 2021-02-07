@@ -83,6 +83,7 @@
       <item name="DisplayUnitLabel" href="aspose/cells/DisplayUnitLabel.html" />
       <item name="DocumentProperty" href="aspose/cells/DocumentProperty.html" />
       <item name="DocumentPropertyCollection" href="aspose/cells/DocumentPropertyCollection.html" />
+      <item name="DocxSaveOptions" href="aspose/cells/DocxSaveOptions.html" />
       <item name="DropBars" href="aspose/cells/DropBars.html" />
       <item name="DxfCollection" href="aspose/cells/DxfCollection.html" />
       <item name="DynamicFilter" href="aspose/cells/DynamicFilter.html" />
@@ -196,6 +197,7 @@
       <item name="PivotTable" href="aspose/cells/PivotTable.html" />
       <item name="PivotTableCollection" href="aspose/cells/PivotTableCollection.html" />
       <item name="PlotArea" href="aspose/cells/PlotArea.html" />
+      <item name="PptxSaveOptions" href="aspose/cells/PptxSaveOptions.html" />
       <item name="ProtectedRange" href="aspose/cells/ProtectedRange.html" />
       <item name="ProtectedRangeCollection" href="aspose/cells/ProtectedRangeCollection.html" />
       <item name="Protection" href="aspose/cells/Protection.html" />
@@ -280,6 +282,7 @@
       <item name="TrendlineCollection" href="aspose/cells/TrendlineCollection.html" />
       <item name="TxtLoadOptions" href="aspose/cells/TxtLoadOptions.html" />
       <item name="TxtSaveOptions" href="aspose/cells/TxtSaveOptions.html" />
+      <item name="UnionRange" href="aspose/cells/UnionRange.html" />
       <item name="Validation" href="aspose/cells/Validation.html" />
       <item name="ValidationCollection" href="aspose/cells/ValidationCollection.html" />
       <item name="VbaModule" href="aspose/cells/VbaModule.html" />
@@ -329,6 +332,7 @@
       <item name="ChartLineFormattingType" href="aspose/cells/ChartLineFormattingType.html" />
       <item name="ChartMarkerType" href="aspose/cells/ChartMarkerType.html" />
       <item name="ChartSplitType" href="aspose/cells/ChartSplitType.html" />
+      <item name="ChartTextDirectionType" href="aspose/cells/ChartTextDirectionType.html" />
       <item name="ChartType" href="aspose/cells/ChartType.html" />
       <item name="CheckValueType" href="aspose/cells/CheckValueType.html" />
       <item name="ColorDepth" href="aspose/cells/ColorDepth.html" />
@@ -342,8 +346,10 @@
       <item name="DataBarFillType" href="aspose/cells/DataBarFillType.html" />
       <item name="DataBarNegativeColorType" href="aspose/cells/DataBarNegativeColorType.html" />
       <item name="DataLabelShapeType" href="aspose/cells/DataLabelShapeType.html" />
+      <item name="DataLabelsSeparatorType" href="aspose/cells/DataLabelsSeparatorType.html" />
       <item name="DataLablesSeparatorType" href="aspose/cells/DataLablesSeparatorType.html" />
       <item name="DateTimeGroupingType" href="aspose/cells/DateTimeGroupingType.html" />
+      <item name="DefaultEditLanguage" href="aspose/cells/DefaultEditLanguage.html" />
       <item name="DirectoryType" href="aspose/cells/DirectoryType.html" />
       <item name="DisplayDrawingObjects" href="aspose/cells/DisplayDrawingObjects.html" />
       <item name="DisplayUnitType" href="aspose/cells/DisplayUnitType.html" />
@@ -413,6 +419,7 @@
       <item name="OperatorType" href="aspose/cells/OperatorType.html" />
       <item name="PageLayoutAlignmentType" href="aspose/cells/PageLayoutAlignmentType.html" />
       <item name="PageOrientationType" href="aspose/cells/PageOrientationType.html" />
+      <item name="PaneStateType" href="aspose/cells/PaneStateType.html" />
       <item name="PaperSizeType" href="aspose/cells/PaperSizeType.html" />
       <item name="ParameterType" href="aspose/cells/ParameterType.html" />
       <item name="PasteType" href="aspose/cells/PasteType.html" />
@@ -432,6 +439,7 @@
       <item name="PivotTableAutoFormatType" href="aspose/cells/PivotTableAutoFormatType.html" />
       <item name="PivotTableStyleType" href="aspose/cells/PivotTableStyleType.html" />
       <item name="PlacementType" href="aspose/cells/PlacementType.html" />
+      <item name="PlotDataByType" href="aspose/cells/PlotDataByType.html" />
       <item name="PlotEmptyCellsType" href="aspose/cells/PlotEmptyCellsType.html" />
       <item name="PresetCameraType" href="aspose/cells/PresetCameraType.html" />
       <item name="PresetMaterialType" href="aspose/cells/PresetMaterialType.html" />
@@ -447,11 +455,11 @@
       <item name="QuartileCalculationType" href="aspose/cells/QuartileCalculationType.html" />
       <item name="RectangleAlignmentType" href="aspose/cells/RectangleAlignmentType.html" />
       <item name="ReflectionEffectType" href="aspose/cells/ReflectionEffectType.html" />
-      <item name="RegexType" href="aspose/cells/RegexType.html" />
       <item name="RenameStrategy" href="aspose/cells/RenameStrategy.html" />
       <item name="ResourceLoadingType" href="aspose/cells/ResourceLoadingType.html" />
       <item name="SaveFormat" href="aspose/cells/SaveFormat.html" />
       <item name="SelectionType" href="aspose/cells/SelectionType.html" />
+      <item name="ShapeAnchorType" href="aspose/cells/ShapeAnchorType.html" />
       <item name="ShapeLockType" href="aspose/cells/ShapeLockType.html" />
       <item name="ShapePathType" href="aspose/cells/ShapePathType.html" />
       <item name="SheetType" href="aspose/cells/SheetType.html" />
