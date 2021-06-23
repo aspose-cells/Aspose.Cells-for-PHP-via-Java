@@ -1,9 +1,9 @@
 {
 	"name" : "aspose/cells",
 	"type" : "library",
-	"description" : "A PHP library to create, convert & manipulate Excel® files while using Aspose.Cells for Java as core library, and PHP-Java Bridge for communication.",
+	"description" : "A powerful library for manipulating and converting Excel (XLS, XLSX, XLSB), ODS, CSV and HTML files.",
 	"keywords" : [
-		"Excel API", "PHP Spreadsheet API", "aspose.cells", "Excel PHP", "PHP via Java"
+		"Excel", "XLS", "XLSX", "XLSB", "CSV", "PDF", "Convert", "Excel to PDF", "HTML", "ODS", "Numbers", "XLSM", "OOXML", "Spreadsheet", "SpreadsheetML", "Markdown", "JPG", "XPS", "DOCX", "PPTX", "MHTML", "SVG"
 	],
 	"homepage" : "https://products.aspose.com/cells/php-java",
 	"license" : "proprietary",

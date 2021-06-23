@@ -2,6 +2,19 @@
 namespace aspose\cells;
 use Java;
 
+final class AccessCacheOptions {
+	const ALL = -1;
+	const CALCULATE_FORMULA = 8388617;
+	const CELL_DISPLAY = 1048710;
+	const CELLS_DATA = 9;
+	const CONDITIONAL_FORMATTING = 16777225;
+	const GET_FORMULA = 2097152;
+	const NONE = 0;
+	const POSITION_AND_SIZE = 3;
+	const SET_FORMULA = 4194304;
+	const VALIDATION = 33554441;
+};
+
 final class AutoFitMergedCellsType {
 	const EACH_LINE = 3;
 	const FIRST_LINE = 1;
@@ -816,31 +829,22 @@ final class CrossType {
 
 final class DataBarAxisPosition {
 	const AUTOMATIC = 0;
-	const DATA_BAR_AXIS_AUTOMATIC = 0;
-	const DATA_BAR_AXIS_MIDPOINT = 1;
-	const DATA_BAR_AXIS_NONE = 2;
 	const MIDPOINT = 1;
 	const NONE = 2;
 };
 
 final class DataBarBorderType {
-	const DATA_BAR_BORDER_NONE = 0;
-	const DATA_BAR_BORDER_SOLID = 1;
 	const NONE = 0;
 	const SOLID = 1;
 };
 
 final class DataBarFillType {
-	const DATA_BAR_FILL_GRADIENT = 1;
-	const DATA_BAR_FILL_SOLID = 0;
 	const GRADIENT = 1;
 	const SOLID = 0;
 };
 
 final class DataBarNegativeColorType {
 	const COLOR = 0;
-	const DATA_BAR_COLOR = 0;
-	const DATA_BAR_SAME_AS_POSITIVE = 1;
 	const SAME_AS_POSITIVE = 1;
 };
 
@@ -933,41 +937,40 @@ final class DropButtonStyle {
 
 final class DynamicFilterType {
 	const ABOVE_AVERAGE = 0;
-	const APRIL = 13;
-	const AUGUST = 17;
+	const APRIL = 12;
+	const AUGUST = 16;
 	const BELOW_AVERAGE = 1;
 	const DECEMBER = 9;
-	const FEBRUARY = 11;
-	const FEBRURAY = 10;
+	const FEBRUARY = 10;
 	const JANUARY = 6;
-	const JULY = 16;
-	const JUNE = 15;
+	const JULY = 15;
+	const JUNE = 14;
 	const LAST_MONTH = 2;
 	const LAST_QUARTER = 3;
 	const LAST_WEEK = 4;
 	const LAST_YEAR = 5;
-	const MARCH = 12;
-	const MAY = 14;
-	const NEXT_MONTH = 19;
-	const NEXT_QUARTER = 20;
-	const NEXT_WEEK = 21;
-	const NEXT_YEAR = 22;
-	const NONE = 23;
+	const MARCH = 11;
+	const MAY = 13;
+	const NEXT_MONTH = 18;
+	const NEXT_QUARTER = 19;
+	const NEXT_WEEK = 20;
+	const NEXT_YEAR = 21;
+	const NONE = 22;
 	const NOVEMBER = 8;
 	const OCTOBER = 7;
-	const QUARTER_1 = 24;
-	const QUARTER_2 = 25;
-	const QUARTER_3 = 26;
-	const QUARTER_4 = 27;
-	const SEPTEMBER = 18;
-	const THIS_MONTH = 28;
-	const THIS_QUARTER = 29;
-	const THIS_WEEK = 30;
-	const THIS_YEAR = 31;
-	const TODAY = 32;
-	const TOMORROW = 33;
-	const YEAR_TO_DATE = 34;
-	const YESTERDAY = 35;
+	const QUARTER_1 = 23;
+	const QUARTER_2 = 24;
+	const QUARTER_3 = 25;
+	const QUARTER_4 = 26;
+	const SEPTEMBER = 17;
+	const THIS_MONTH = 27;
+	const THIS_QUARTER = 28;
+	const THIS_WEEK = 29;
+	const THIS_YEAR = 30;
+	const TODAY = 31;
+	const TOMORROW = 32;
+	const YEAR_TO_DATE = 33;
+	const YESTERDAY = 34;
 };
 
 final class EmfRenderSetting {
@@ -1063,6 +1066,7 @@ final class FileFormatType {
 	const MARKDOWN = 57;
 	const MS_EQUATION = 34;
 	const NUMBERS = 56;
+	const NUMBERS_09 = 56;
 	const NUMBERS_35 = 62;
 	const ODF = 49;
 	const ODG = 50;
@@ -1082,6 +1086,7 @@ final class FileFormatType {
 	const PPT = 32;
 	const PPTM = 41;
 	const PPTX = 26;
+	const SPREADSHEET_ML = 15;
 	const SVG = 28;
 	const SXC = 60;
 	const TAB_DELIMITED = 11;
@@ -1442,6 +1447,7 @@ final class ImageType {
 	const SVM = 69;
 	const TIFF = 67;
 	const UNKNOWN = 0;
+	const WEB_P = 72;
 	const WMF = 3;
 };
 
@@ -1864,20 +1870,6 @@ final class OLEDBCommandType {
 	const WEB_BASED_LIST = 5;
 };
 
-final class OleFileType {
-	const DOC = 1;
-	const DOCX = 8;
-	const MAPI_MESSAGE = 5;
-	const MS_EQUATION = 4;
-	const PDF = 3;
-	const PPT = 2;
-	const PPTX = 9;
-	const UNKNOWN = 10;
-	const XLS = 0;
-	const XLSB = 7;
-	const XLSX = 6;
-};
-
 final class OoxmlCompliance {
 	const ECMA_376_2006 = 0;
 	const ISO_29500_2008_STRICT = 1;
@@ -2088,6 +2080,11 @@ final class PdfCompressionCore {
 final class PdfCustomPropertiesExport {
 	const NONE = 0;
 	const STANDARD = 1;
+};
+
+final class PdfFontEncoding {
+	const ANSI_PREFER = 1;
+	const IDENTITY = 0;
 };
 
 final class PdfOptimizationType {
@@ -2646,7 +2643,7 @@ final class SaveFormat {
 	const PDF = 13;
 	const PPTX = 61;
 	const SPREADSHEET_ML = 15;
-	const SVG = 22;
+	const SVG = 28;
 	const SXC = 60;
 	const TAB_DELIMITED = 11;
 	const TIFF = 21;
@@ -4009,13 +4006,6 @@ class CopyOptions extends Java {
 	}
 }
 
-class CustomFilter extends Java {
-	static private $_className = "com.aspose.cells.CustomFilter";
-	function __construct(...$argv) {
-		parent::__construct(self::$_className, ...$argv);
-	}
-}
-
 class CustomFilterCollection extends Java {
 	static private $_className = "com.aspose.cells.CustomFilterCollection";
 	function __construct(...$argv) {
@@ -4894,6 +4884,10 @@ class FileFormatUtil extends Java {
 
 	static function extensionToSaveFormat(...$argv) {
 		return Java(self::$_className)->extensionToSaveFormat(...$argv);
+	}
+
+	static function fileFormatToSaveFormat(...$argv) {
+		return Java(self::$_className)->fileFormatToSaveFormat(...$argv);
 	}
 
 	static function isTemplateFormat(...$argv) {
