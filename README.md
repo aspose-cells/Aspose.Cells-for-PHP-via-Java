@@ -90,4 +90,4 @@ $workbook->save("example.pdf", $saveOptions);
 ?>
 ```
 
-[Product Page](https://products.aspose.com/cells/php-java) | [Documentation](https://docs.aspose.com/cells/phpjava/) | [API Reference](https://apireference.aspose.com/cells/php) | [Code Examples](https://github.com/aspose-cells/Aspose.Cells-for-Java) | [Blog](https://blog.aspose.com/category/cells/) | [Free Support](https://forum.aspose.com/c/cells) | [Temporary License](https://purchase.aspose.com/temporary-license)
+[Product Page](https://products.aspose.com/cells/php-java) | [Documentation](https://docs.aspose.com/cells/phpjava/) | [API Reference](https://apireference.aspose.com/cells/php) | [Code Examples](https://github.com/aspose-cells/Aspose.Cells-for-Java) | [Blog](https://blog.aspose.com/category/cells/) | [Search](https://search.aspose.com/) | [Free Support](https://forum.aspose.com/c/cells) | [Temporary License](https://purchase.aspose.com/temporary-license)
