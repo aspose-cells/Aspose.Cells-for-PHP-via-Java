@@ -2048,6 +2048,14 @@ final class ParameterType {
 	const VALUE = 1;
 };
 
+final class PasteOperationType {
+	const ADD = 1;
+	const DIVIDE = 4;
+	const MULTIPLY = 3;
+	const NONE = 0;
+	const SUBTRACT = 2;
+};
+
 final class PasteType {
 	const ALL = 0;
 	const ALL_EXCEPT_BORDERS = 2;
@@ -4269,21 +4277,6 @@ class LoadOptions extends Java {
 	static private $_className = "com.aspose.cells.LoadOptions";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
-	}
-}
-
-class LocaleNumberFormatConstants extends Java {
-	static private $_className = "com.aspose.cells.LocaleNumberFormatConstants";
-	function __construct(...$argv) {
-		parent::__construct(self::$_className, ...$argv);
-	}
-
-	static function getRegionDecimalSeparator(...$argv) {
-		return Java(self::$_className)->getRegionDecimalSeparator(...$argv);
-	}
-
-	static function getRegionGroupSeparator(...$argv) {
-		return Java(self::$_className)->getRegionGroupSeparator(...$argv);
 	}
 }
 
