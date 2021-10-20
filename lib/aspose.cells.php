@@ -15,6 +15,14 @@ final class AccessCacheOptions {
 	const VALIDATION = 33554441;
 };
 
+final class AutoFillType {
+	const COPY = 1;
+	const DEFAULT = 0;
+	const FORMATS = 3;
+	const SERIES = 2;
+	const VALUES = 4;
+};
+
 final class AutoFitMergedCellsType {
 	const EACH_LINE = 3;
 	const FIRST_LINE = 1;
@@ -3377,6 +3385,13 @@ class AutoFitterOptions extends Java {
 
 class AutoNumberedBulletValue extends Java {
 	static private $_className = "com.aspose.cells.AutoNumberedBulletValue";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class AxisBins extends Java {
+	static private $_className = "com.aspose.cells.AxisBins";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
