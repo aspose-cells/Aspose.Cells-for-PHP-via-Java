@@ -483,6 +483,7 @@ final class CellBorderType {
 
 final class CellValueFormatStrategy {
 	const CELL_STYLE = 1;
+	const DISPLAY_STRING = 3;
 	const DISPLAY_STYLE = 2;
 	const NONE = 0;
 };
@@ -601,6 +602,7 @@ final class ChartType {
 	const RADAR = 57;
 	const RADAR_FILLED = 59;
 	const RADAR_WITH_DATA_MARKERS = 58;
+	const RADIAL_HISTOGRAM = 81;
 	const SCATTER = 60;
 	const SCATTER_CONNECTED_BY_CURVES_WITH_DATA_MARKER = 61;
 	const SCATTER_CONNECTED_BY_CURVES_WITHOUT_DATA_MARKER = 62;
@@ -640,6 +642,11 @@ final class ColorType {
 	const INDEXED_COLOR = 3;
 	const RGB = 2;
 	const THEME = 4;
+};
+
+final class CommentTitleType {
+	const CELL = 0;
+	const COMMENT = 1;
 };
 
 final class ConsolidationFunction {
@@ -1060,6 +1067,7 @@ final class FileFormatType {
 	const DOCX = 27;
 	const DOTM = 40;
 	const DOTX = 39;
+	const EMF = 258;
 	const EXCEL_2 = 25;
 	const EXCEL_2003_XML = 15;
 	const EXCEL_3 = 24;
@@ -1067,8 +1075,11 @@ final class FileFormatType {
 	const EXCEL_95 = 22;
 	const EXCEL_97_TO_2003 = 5;
 	const FODS = 59;
+	const GIF = 322;
 	const GRAPH_CHART = 58;
 	const HTML = 12;
+	const JPG = 261;
+	const JSON = 513;
 	const M_HTML = 17;
 	const MAPI_MESSAGE = 33;
 	const MARKDOWN = 57;
@@ -1087,6 +1098,7 @@ final class FileFormatType {
 	const OTS = 55;
 	const OTT = 53;
 	const PDF = 13;
+	const PNG = 262;
 	const POTM = 43;
 	const POTX = 42;
 	const PPSM = 45;
@@ -1103,6 +1115,7 @@ final class FileFormatType {
 	const UNKNOWN = 255;
 	const VSD = 36;
 	const VSDX = 37;
+	const WMF = 259;
 	const XLAM = 10;
 	const XLSB = 16;
 	const XLSM = 7;
@@ -1609,6 +1622,8 @@ final class LoadFormat {
 	const EXCEL_97_TO_2003 = 5;
 	const FODS = 59;
 	const HTML = 12;
+	const IMAGE = 254;
+	const JSON = 513;
 	const M_HTML = 13;
 	const NUMBERS = 56;
 	const ODS = 14;
@@ -2646,17 +2661,23 @@ final class RevisionType {
 
 final class SaveFormat {
 	const AUTO = 0;
+	const BMP = 263;
 	const CSV = 1;
 	const DIF = 30;
 	const DOCX = 62;
+	const EMF = 258;
 	const EXCEL_97_TO_2003 = 5;
 	const FODS = 59;
+	const GIF = 322;
 	const HTML = 12;
+	const JPG = 261;
+	const JSON = 513;
 	const M_HTML = 17;
 	const MARKDOWN = 57;
 	const NUMBERS = 56;
 	const ODS = 14;
 	const PDF = 13;
+	const PNG = 262;
 	const PPTX = 61;
 	const SPREADSHEET_ML = 15;
 	const SVG = 28;
@@ -4246,6 +4267,20 @@ class InsertOptions extends Java {
 
 class JsonLayoutOptions extends Java {
 	static private $_className = "com.aspose.cells.JsonLayoutOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class JsonLoadOptions extends Java {
+	static private $_className = "com.aspose.cells.JsonLoadOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class JsonSaveOptions extends Java {
+	static private $_className = "com.aspose.cells.JsonSaveOptions";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
