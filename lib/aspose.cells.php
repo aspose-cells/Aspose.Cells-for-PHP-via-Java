@@ -1107,6 +1107,7 @@ final class FileFormatType {
 	const PPTM = 41;
 	const PPTX = 26;
 	const SPREADSHEET_ML = 15;
+	const SQL_SCRIPT = 514;
 	const SVG = 28;
 	const SXC = 60;
 	const TAB_DELIMITED = 11;
@@ -1605,6 +1606,7 @@ final class LoadDataFilterOptions {
 	const OLE_OBJECT = 268435456;
 	const PICTURE = 134217728;
 	const PIVOT_TABLE = 8192;
+	const REVISION = 536870912;
 	const SETTINGS = 1114112;
 	const SHAPE = 402653696;
 	const SHEET_DATA = 403701759;
@@ -1634,6 +1636,7 @@ final class LoadFormat {
 	const UNKNOWN = 255;
 	const XLSB = 16;
 	const XLSX = 6;
+	const XML = 51;
 };
 
 final class LookAtType {
@@ -2680,6 +2683,7 @@ final class SaveFormat {
 	const PNG = 262;
 	const PPTX = 61;
 	const SPREADSHEET_ML = 15;
+	const SQL_SCRIPT = 514;
 	const SVG = 28;
 	const SXC = 60;
 	const TAB_DELIMITED = 11;
@@ -2692,6 +2696,7 @@ final class SaveFormat {
 	const XLSX = 6;
 	const XLTM = 9;
 	const XLTX = 8;
+	const XML = 51;
 	const XPS = 20;
 };
 
@@ -2896,6 +2901,12 @@ final class SqlDataType {
 	const SQL_W_CHAR = -8;
 	const SQL_W_LONG_VARCHAR = -10;
 	const SQL_W_VARCHAR = -9;
+};
+
+final class SqlScriptOperatorType {
+	const DELETE = 2;
+	const INSERT = 0;
+	const UPDATE = 1;
 };
 
 final class StyleModifyFlag {
@@ -4562,6 +4573,20 @@ class SpreadsheetML2003SaveOptions extends Java {
 	}
 }
 
+class SqlScriptColumnTypeMap extends Java {
+	static private $_className = "com.aspose.cells.SqlScriptColumnTypeMap";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class SqlScriptSaveOptions extends Java {
+	static private $_className = "com.aspose.cells.SqlScriptSaveOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
 class Style extends Java {
 	static private $_className = "com.aspose.cells.Style";
 	function __construct(...$argv) {
@@ -4725,6 +4750,20 @@ class XlsSaveOptions extends Java {
 
 class XmlColumnProperty extends Java {
 	static private $_className = "com.aspose.cells.XmlColumnProperty";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class XmlLoadOptions extends Java {
+	static private $_className = "com.aspose.cells.XmlLoadOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class XmlSaveOptions extends Java {
+	static private $_className = "com.aspose.cells.XmlSaveOptions";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}

@@ -15,16 +15,15 @@ Aspose.Cells for PHP via Java is a feature-rich API to create, process, manipula
 - Populate worksheets through Smart Markers.
 
 ## Read & Write Excel Files
-
-**Microsoft Excel:** XLS, XLSX, XLSB, XLTX, XLTM, XLSM, XML 
-**OpenOffice:** ODS 
-**Text:** CSV, Tab-Delimited, TXT 
+**Microsoft Excel:** XLS, XLSX, XLSB, XLTX, XLTM, XLSM, XML
+**OpenOffice:** ODS
+**Text:** CSV, Tab-Delimited, TXT, JSON
 **Web:** HTML, MHTML
 
-## Save Excel Files As
-
-**Fixed Layout:** PDF, XPS 
+## Save Excel Files As 
+**Fixed Layout:** PDF, XPS
 **Images:** JPEG, PNG, BMP, SVG, TIFF, GIF, EMF
+**Text:** CSV, Tab-Delimited, JSON, SQL, XML
 
 ## Getting Started with Aspose.Cells for PHP via Java
 

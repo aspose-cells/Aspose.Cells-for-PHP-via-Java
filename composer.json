@@ -3,7 +3,7 @@
 	"type" : "library",
 	"description" : "A powerful library for manipulating and converting Excel (XLS, XLSX, XLSB), ODS, CSV and HTML files.",
 	"keywords" : [
-		"Excel", "XLS", "XLSX", "XLSB", "CSV", "PDF", "Convert", "Excel to PDF", "HTML", "ODS", "Numbers", "XLSM", "OOXML", "Spreadsheet", "SpreadsheetML", "Markdown", "JPG", "XPS", "DOCX", "PPTX", "MHTML", "SVG"
+		"Excel", "XLS", "XLSX", "XLSB", "CSV", "PDF", "Convert", "Excel to PDF", "HTML", "ODS", "Numbers", "XLSM", "OOXML", "Spreadsheet", "SpreadsheetML", "Markdown", "JPG", "XPS", "DOCX", "PPTX", "MHTML", "SVG", "JSON", "SQL", "XML"
 	],
 	"homepage" : "https://products.aspose.com/cells/php-java",
 	"license" : "proprietary",
