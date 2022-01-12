@@ -3475,6 +3475,13 @@ class CharacterBulletValue extends Java {
 	}
 }
 
+class ChartGlobalizationSettings extends Java {
+	static private $_className = "com.aspose.cells.ChartGlobalizationSettings";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
 class Color extends Java {
 	static private $_className = "com.aspose.cells.Color";
 	function __construct(...$argv) {
