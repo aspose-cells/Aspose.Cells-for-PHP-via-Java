@@ -1729,7 +1729,7 @@ final class MsoDrawingType {
 	const LABEL = 14;
 	const LINE = 1;
 	const LIST_BOX = 18;
-	const MODEL_3_D = 35;
+	const MODEL_3_D = 36;
 	const OLE_OBJECT = 24;
 	const OVAL = 3;
 	const PICTURE = 8;
@@ -1741,6 +1741,7 @@ final class MsoDrawingType {
 	const SMART_ART = 33;
 	const SPINNER = 16;
 	const TEXT_BOX = 6;
+	const TIMELINE = 35;
 	const UNKNOWN = 29;
 	const WEB_EXTENSION = 32;
 };
@@ -1840,6 +1841,12 @@ final class MsoPresetTextEffectShape {
 	const TRIANGLE_UP = 138;
 	const WAVE_1 = 156;
 	const WAVE_2 = 157;
+};
+
+final class NameScopeType {
+	const ALL = 0;
+	const WORKBOOK = 1;
+	const WORKSHEET = 2;
 };
 
 final class NumberCategoryType {
