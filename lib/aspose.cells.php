@@ -1629,6 +1629,7 @@ final class LoadFormat {
 	const M_HTML = 13;
 	const NUMBERS = 56;
 	const ODS = 14;
+	const OTS = 31;
 	const SPREADSHEET_ML = 15;
 	const SXC = 60;
 	const TAB_DELIMITED = 11;
@@ -2686,6 +2687,7 @@ final class SaveFormat {
 	const MARKDOWN = 57;
 	const NUMBERS = 56;
 	const ODS = 14;
+	const OTS = 31;
 	const PDF = 13;
 	const PNG = 262;
 	const PPTX = 61;
@@ -2701,6 +2703,7 @@ final class SaveFormat {
 	const XLSB = 16;
 	const XLSM = 7;
 	const XLSX = 6;
+	const XLT = 32;
 	const XLTM = 9;
 	const XLTX = 8;
 	const XML = 51;
