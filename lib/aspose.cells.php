@@ -1032,6 +1032,7 @@ final class ExceptionType {
 	const CONDITIONAL_FORMATTING = 3;
 	const DATA_TYPE = 1;
 	const DATA_VALIDATION = 2;
+	const FILE_CORRUPTED = 23;
 	const FILE_FORMAT = 4;
 	const FORMULA = 5;
 	const INCORRECT_PASSWORD = 8;
