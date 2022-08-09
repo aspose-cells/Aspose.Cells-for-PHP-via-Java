@@ -4562,6 +4562,21 @@ class SheetRender extends Java {
 	}
 }
 
+class SheetSet extends Java {
+	static private $_className = "com.aspose.cells.SheetSet";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+
+	static function getAll(...$argv) {
+		return Java(self::$_className)->getAll(...$argv);
+	}
+
+	static function getVisible(...$argv) {
+		return Java(self::$_className)->getVisible(...$argv);
+	}
+}
+
 class SignatureLine extends Java {
 	static private $_className = "com.aspose.cells.SignatureLine";
 	function __construct(...$argv) {
