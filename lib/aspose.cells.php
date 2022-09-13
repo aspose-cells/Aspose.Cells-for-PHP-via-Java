@@ -1641,6 +1641,12 @@ final class LoadFormat {
 	const XML = 51;
 };
 
+final class LoadNumbersTableType {
+	const ONE_TABLE_PER_SHEET = 1;
+	const OVERRIDE_OTHER_TABLES = 2;
+	const TILE_TABLES = 4;
+};
+
 final class LookAtType {
 	const CONTAINS = 0;
 	const END_WITH = 2;
@@ -2523,6 +2529,14 @@ final class PresetShadowType {
 	const PERSPECTIVE_DIAGONAL_LOWER_RIGHT = 24;
 	const PERSPECTIVE_DIAGONAL_UPPER_LEFT = 20;
 	const PERSPECTIVE_DIAGONAL_UPPER_RIGHT = 21;
+};
+
+final class PresetThemeGradientType {
+	const BOTTOM_SPOTLIGHT = 3;
+	const LIGHT_GRADIENT = 0;
+	const MEDIUM_GRADIENT = 2;
+	const RADIAL_GRADIENT = 4;
+	const TOP_SPOTLIGHT = 1;
 };
 
 final class PresetWordArtStyle {
@@ -4403,6 +4417,13 @@ class MultipleFilterCollection extends Java {
 
 class NoneBulletValue extends Java {
 	static private $_className = "com.aspose.cells.NoneBulletValue";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class NumbersLoadOptions extends Java {
+	static private $_className = "com.aspose.cells.NumbersLoadOptions";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
