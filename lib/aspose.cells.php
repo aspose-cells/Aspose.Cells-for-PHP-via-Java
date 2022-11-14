@@ -869,6 +869,7 @@ final class DataLabelShapeType {
 	const DOWN_ARROW_CALLOUT = 4;
 	const ELLIPSE = 2;
 	const LEFT_ARROW_CALLOUT = 5;
+	const LINE = 14;
 	const LINE_CALLOUT = 10;
 	const LINE_WITH_ACCENT_BAR_CALLOUT = 12;
 	const RECT = 0;
