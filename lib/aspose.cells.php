@@ -280,8 +280,6 @@ final class AutoShapeType {
 	const TEXT_WAVE = 28;
 	const TEXT_WAVE_1 = 156;
 	const TEXT_WAVE_2 = 157;
-	const TEXT_WAVE_3 = 158;
-	const TEXT_WAVE_4 = 159;
 	const TRAPEZOID = 8;
 	const U_TURN_ARROW = 101;
 	const UNKNOWN = 4095;
@@ -1489,6 +1487,12 @@ final class InputMethodEditorMode {
 	const NO_CONTROL = 0;
 	const OFF = 2;
 	const ON = 1;
+};
+
+final class JsonExportHyperlinkType {
+	const ADDRESS = 1;
+	const DISPLAY_STRING = 0;
+	const HTML_STRING = 2;
 };
 
 final class LabelPositionType {
