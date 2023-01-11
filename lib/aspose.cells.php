@@ -930,6 +930,7 @@ final class DisplayDrawingObjects {
 final class DisplayUnitType {
 	const BILLIONS = 8;
 	const CUST = 11;
+	const CUSTOM = 12;
 	const HUNDRED_MILLIONS = 7;
 	const HUNDRED_THOUSANDS = 4;
 	const HUNDREDS = 1;
@@ -4504,6 +4505,13 @@ class PictureBulletValue extends Java {
 	}
 }
 
+class PivotGlobalizationSettings extends Java {
+	static private $_className = "com.aspose.cells.PivotGlobalizationSettings";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
 class PivotPageFields extends Java {
 	static private $_className = "com.aspose.cells.PivotPageFields";
 	function __construct(...$argv) {
@@ -4534,6 +4542,13 @@ class PptxSaveOptions extends Java {
 
 class ReplaceOptions extends Java {
 	static private $_className = "com.aspose.cells.ReplaceOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class RevisionHeader extends Java {
+	static private $_className = "com.aspose.cells.RevisionHeader";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
@@ -4703,6 +4718,13 @@ class TilePicOption extends Java {
 
 class Top10 extends Java {
 	static private $_className = "com.aspose.cells.Top10";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class TwoColorGradient extends Java {
+	static private $_className = "com.aspose.cells.TwoColorGradient";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
