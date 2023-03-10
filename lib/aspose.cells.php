@@ -2320,6 +2320,12 @@ final class PivotTableAutoFormatType {
 	const TABLE_9 = 20;
 };
 
+final class PivotTableSelectionType {
+	const DATA_AND_LABEL = 0;
+	const DATA_ONLY = 2;
+	const LABEL_ONLY = 1;
+};
+
 final class PivotTableStyleType {
 	const CUSTOM = 85;
 	const NONE = 0;
@@ -2943,7 +2949,7 @@ final class SqlScriptOperatorType {
 
 final class StyleModifyFlag {
 	const ALIGNMENT_SETTINGS = 4161664;
-	const ALL = 234881011;
+	const ALL = 234881012;
 	const BACKGROUND_COLOR = 16777216;
 	const BORDERS = 16224;
 	const BOTTOM_BORDER = 2048;
@@ -2951,7 +2957,7 @@ final class StyleModifyFlag {
 	const DIAGONAL = 12288;
 	const DIAGONAL_DOWN_BORDER = 4096;
 	const DIAGONAL_UP_BORDER = 8192;
-	const FONT = 19;
+	const FONT = 20;
 	const FONT_CAP = 18;
 	const FONT_CHARSET = 10;
 	const FONT_COLOR = 3;
@@ -2969,6 +2975,7 @@ final class StyleModifyFlag {
 	const FONT_STRIKE = 7;
 	const FONT_U_FILL_TX = 14;
 	const FONT_UNDERLINE = 6;
+	const FONT_VERTICAL_TEXT = 19;
 	const FONT_WEIGHT = 4;
 	const FOREGROUND_COLOR = 8388608;
 	const HIDE_FORMULA = 134217728;
@@ -4505,6 +4512,13 @@ class PictureBulletValue extends Java {
 	}
 }
 
+class PivotArea extends Java {
+	static private $_className = "com.aspose.cells.PivotArea";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
 class PivotGlobalizationSettings extends Java {
 	static private $_className = "com.aspose.cells.PivotGlobalizationSettings";
 	function __construct(...$argv) {
@@ -4607,6 +4621,10 @@ class SheetSet extends Java {
 	static private $_className = "com.aspose.cells.SheetSet";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
+	}
+
+	static function getActive(...$argv) {
+		return Java(self::$_className)->getActive(...$argv);
 	}
 
 	static function getAll(...$argv) {
