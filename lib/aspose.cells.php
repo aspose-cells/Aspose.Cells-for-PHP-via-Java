@@ -753,6 +753,7 @@ final class ControlSpecialEffectType {
 };
 
 final class ControlType {
+	const BAR_CODE = 11;
 	const CHECK_BOX = 2;
 	const COMBO_BOX = 1;
 	const COMMAND_BUTTON = 0;
@@ -764,7 +765,7 @@ final class ControlType {
 	const SPIN_BUTTON = 5;
 	const TEXT_BOX = 4;
 	const TOGGLE_BUTTON = 9;
-	const UNKNOWN = 11;
+	const UNKNOWN = 12;
 };
 
 final class CopyFormatType {
@@ -1000,6 +1001,138 @@ final class EncryptionType {
 	const XOR = 0;
 };
 
+final class EquationCharacterPositionType {
+	const BOTTOM = 1;
+	const TOP = 0;
+};
+
+final class EquationCombiningCharacterType {
+	const ACUTE_ACCENT = 5;
+	const BOTTOM_CURLY_BRACKET = 12;
+	const BREVE = 7;
+	const CARON = 4;
+	const CIRCUMFLEX_ACCENT = 3;
+	const DIAERESIS = 1;
+	const DOT_ABOVE = 0;
+	const DOUBLE_OVERLINE = 10;
+	const GRAVE_ACCENT = 6;
+	const LEFT_ARROW_ABOVE = 13;
+	const LEFT_HARPOON_ABOVE = 16;
+	const LEFT_RIGHT_ARROW = 20;
+	const LEFT_RIGHT_ARROW_ABOVE = 15;
+	const LEFT_RIGHT_DOUBLE_ARROW = 23;
+	const LEFTWARDS_ARROW = 18;
+	const LEFTWARDS_DOUBLE_ARROW = 21;
+	const OVERLINE = 9;
+	const RIGHT_ARROW_ABOVE = 14;
+	const RIGHT_HARPOON_ABOVE = 17;
+	const RIGHTWARDS_ARROW = 19;
+	const RIGHTWARDS_DOUBLE_ARROW = 22;
+	const THREE_DOTS_ABOVE = 2;
+	const TILDE = 8;
+	const TOP_CURLY_BRACKET = 11;
+	const UNKNOWN = -1;
+};
+
+final class EquationDelimiterShapeType {
+	const CENTERED = 0;
+	const MATCH = 1;
+};
+
+final class EquationFractionType {
+	const BAR = 0;
+	const LINEAR = 2;
+	const NO_BAR = 1;
+	const SKEWED = 3;
+};
+
+final class EquationHorizontalJustificationType {
+	const CENTER = 0;
+	const CENTER_GROUP = 1;
+	const LEFT = 2;
+	const RIGHT = 3;
+};
+
+final class EquationLimitLocationType {
+	const SUB_SUP = 1;
+	const UND_OVR = 0;
+};
+
+final class EquationMathematicalOperatorType {
+	const ANTICLOCKWISE_CONTOUR_INTEGRAL = 30;
+	const CLOCKWISE = 28;
+	const CLOCKWISE_CONTOUR_INTEGRAL = 29;
+	const COMPLEMENT = 1;
+	const CONTAIN = 11;
+	const CONTOUR_INTEGRAL = 25;
+	const DOUBLE_INTEGRAL = 23;
+	const ELEMENT_OF = 8;
+	const EMPTY_SET = 5;
+	const END_OF_PROOF = 14;
+	const EXISTS = 3;
+	const FOR_ALL = 0;
+	const INCREMENT = 6;
+	const INTEGRAL = 22;
+	const INTERSECTION = 20;
+	const LOGICAL_AND = 18;
+	const LOGICAL_OR = 19;
+	const NABLA = 7;
+	const NARY_COPRODUCT = 16;
+	const NARY_INTERSECTION = 33;
+	const NARY_LOGICAL_AND = 31;
+	const NARY_LOGICAL_OR = 32;
+	const NARY_PRODUCT = 15;
+	const NARY_SUMMATION = 17;
+	const NARY_UNION = 34;
+	const NOT_AN_ELEMENT_OF = 9;
+	const NOT_CONTAIN = 12;
+	const NOT_EXISTS = 4;
+	const PARTIAL_DIFFERENTIAL = 2;
+	const SMALL_CONTAIN = 13;
+	const SMALL_ELEMENT_OF = 10;
+	const SURFACE_INTEGRAL = 26;
+	const TRIPLE_INTEGRAL = 24;
+	const UNION = 21;
+	const UNKNOWN = -1;
+	const VOLUME_INTEGRAL = 27;
+};
+
+final class EquationNodeType {
+	const ACCENT_EQUATION = 211;
+	const BAR_EQUATION = 212;
+	const BASE = 100;
+	const BORDER_BOX_EQUATION = 213;
+	const BOX_EQUATION = 214;
+	const DEGREE = 106;
+	const DELIMITER_EQUATION = 204;
+	const DENOMINATOR = 101;
+	const EQUATION_PARAGRAPH = 200;
+	const FRACTION_EQUATION = 202;
+	const FUNCTION_EQUATION = 203;
+	const FUNCTION_NAME = 103;
+	const GROUP_CHARACTER_EQUATION = 215;
+	const MATHEMATICAL_EQUATION = 201;
+	const MATRIX_EQUATION = 216;
+	const MATRIX_ROW = 107;
+	const NARY_EQUATION = 205;
+	const NUMERATOR = 102;
+	const PRE_SUB_SUP_EQUATION = 210;
+	const RADICAL_EQUATION = 206;
+	const SUB_SUP_EQUATION = 209;
+	const SUBSCRIPT = 104;
+	const SUBSCRIPT_EQUATION = 208;
+	const SUPERSCRIPT = 105;
+	const SUPERSCRIPT_EQUATION = 207;
+	const TEXT = 1;
+	const UN_KNOW = 0;
+};
+
+final class EquationVerticalJustificationType {
+	const BOTTOM = 2;
+	const CENTER = 1;
+	const TOP = 0;
+};
+
 final class ErrorBarDisplayType {
 	const BOTH = 0;
 	const MINUS = 1;
@@ -1094,6 +1227,7 @@ final class FileFormatType {
 	const ODS = 14;
 	const ODT = 47;
 	const OLE_10_NATIVE = 35;
+	const ONE_NOTE = 772;
 	const OOXML = 46;
 	const OTP = 61;
 	const OTS = 55;
@@ -1118,6 +1252,7 @@ final class FileFormatType {
 	const VSD = 36;
 	const VSDX = 37;
 	const WMF = 259;
+	const X_HTML = 771;
 	const XLAM = 10;
 	const XLSB = 16;
 	const XLSM = 7;
@@ -2727,6 +2862,7 @@ final class SaveFormat {
 	const TIFF = 21;
 	const TSV = 11;
 	const UNKNOWN = 255;
+	const X_HTML = 771;
 	const XLAM = 10;
 	const XLSB = 16;
 	const XLSM = 7;
@@ -4232,6 +4368,10 @@ class FontConfigs extends Java {
 		return Java(self::$_className)->getFontSubstitutes(...$argv);
 	}
 
+	static function isFontAvailable(...$argv) {
+		return Java(self::$_className)->isFontAvailable(...$argv);
+	}
+
 	static function setDefaultFontName(...$argv) {
 		Java(self::$_className)->setDefaultFontName(...$argv);
 	}
@@ -5052,6 +5192,14 @@ class Encoding extends Java {
 
 	static function getUnicode(...$argv) {
 		return Java(self::$_className)->getUnicode(...$argv);
+	}
+}
+
+class EquationNode extends Java {
+	static private $_className = "com.aspose.cells.EquationNode";
+
+	static function createNode(...$argv) {
+		return Java(self::$_className)->createNode(...$argv);
 	}
 }
 
