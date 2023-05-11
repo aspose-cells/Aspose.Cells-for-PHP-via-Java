@@ -2283,6 +2283,16 @@ final class PdfOptimizationType {
 	const STANDARD = 0;
 };
 
+final class PivotAreaType {
+	const ALL = 3;
+	const BUTTON = 5;
+	const DATA = 2;
+	const NONE = 0;
+	const NORMAL = 1;
+	const ORIGIN = 4;
+	const TOP_RIGHT = 6;
+};
+
 final class PivotConditionFormatRuleType {
 	const ALL = 1;
 	const COLUMN = 3;
@@ -4659,6 +4669,20 @@ class PivotArea extends Java {
 	}
 }
 
+class PivotAreaFilter extends Java {
+	static private $_className = "com.aspose.cells.PivotAreaFilter";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class PivotAreaFilterCollection extends Java {
+	static private $_className = "com.aspose.cells.PivotAreaFilterCollection";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
 class PivotGlobalizationSettings extends Java {
 	static private $_className = "com.aspose.cells.PivotGlobalizationSettings";
 	function __construct(...$argv) {
@@ -4689,6 +4713,20 @@ class PowerQueryFormulaParameterCollection extends Java {
 
 class PptxSaveOptions extends Java {
 	static private $_className = "com.aspose.cells.PptxSaveOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class RenderingFont extends Java {
+	static private $_className = "com.aspose.cells.RenderingFont";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class RenderingWatermark extends Java {
+	static private $_className = "com.aspose.cells.RenderingWatermark";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
