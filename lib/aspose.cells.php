@@ -1209,6 +1209,7 @@ final class FileFormatType {
 	const EXCEL_95 = 22;
 	const EXCEL_97_TO_2003 = 5;
 	const FODS = 59;
+	const G_ZIP = 35615;
 	const GIF = 322;
 	const GRAPH_CHART = 58;
 	const HTML = 12;
@@ -1590,6 +1591,11 @@ final class IconSetType {
 	const TRAFFIC_LIGHTS_32 = 7;
 	const TRAFFIC_LIGHTS_4 = 12;
 	const TRIANGLES_3 = 19;
+};
+
+final class ImageBinarizationMethod {
+	const FLOYD_STEINBERG_DITHERING = 1;
+	const THRESHOLD = 0;
 };
 
 final class ImageType {
@@ -4423,6 +4429,13 @@ class FormulaParseOptions extends Java {
 
 class GlobalizationSettings extends Java {
 	static private $_className = "com.aspose.cells.GlobalizationSettings";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class HighlightChangesOptions extends Java {
+	static private $_className = "com.aspose.cells.HighlightChangesOptions";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
