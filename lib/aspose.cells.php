@@ -1203,7 +1203,6 @@ final class FileFormatType {
 	const DOTX = 39;
 	const EMF = 258;
 	const EXCEL_2 = 25;
-	const EXCEL_2003_XML = 15;
 	const EXCEL_3 = 24;
 	const EXCEL_4 = 23;
 	const EXCEL_95 = 22;
@@ -1218,6 +1217,7 @@ final class FileFormatType {
 	const M_HTML = 17;
 	const MAPI_MESSAGE = 33;
 	const MARKDOWN = 57;
+	const MICROSOFT_CABINET = 773;
 	const MS_EQUATION = 34;
 	const NUMBERS = 56;
 	const NUMBERS_09 = 56;
@@ -1242,6 +1242,7 @@ final class FileFormatType {
 	const PPT = 32;
 	const PPTM = 41;
 	const PPTX = 26;
+	const RTF = 774;
 	const SPREADSHEET_ML = 15;
 	const SQL_SCRIPT = 514;
 	const SVG = 28;
@@ -4455,6 +4456,20 @@ class HtmlSaveOptions extends Java {
 	}
 }
 
+class HtmlTableLoadOption extends Java {
+	static private $_className = "com.aspose.cells.HtmlTableLoadOption";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class HtmlTableLoadOptionCollection extends Java {
+	static private $_className = "com.aspose.cells.HtmlTableLoadOptionCollection";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
 class ImageOrPrintOptions extends Java {
 	static private $_className = "com.aspose.cells.ImageOrPrintOptions";
 	function __construct(...$argv) {
@@ -4761,6 +4776,27 @@ class RevisionHeader extends Java {
 
 class SeriesLayoutProperties extends Java {
 	static private $_className = "com.aspose.cells.SeriesLayoutProperties";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class SettableChartGlobalizationSettings extends Java {
+	static private $_className = "com.aspose.cells.SettableChartGlobalizationSettings";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class SettableGlobalizationSettings extends Java {
+	static private $_className = "com.aspose.cells.SettableGlobalizationSettings";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class SettablePivotGlobalizationSettings extends Java {
+	static private $_className = "com.aspose.cells.SettablePivotGlobalizationSettings";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
