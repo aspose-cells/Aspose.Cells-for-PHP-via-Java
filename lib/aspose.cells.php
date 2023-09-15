@@ -487,13 +487,13 @@ final class CellValueFormatStrategy {
 };
 
 final class CellValueType {
-	const IS_BOOL = 0;
-	const IS_DATE_TIME = 1;
-	const IS_ERROR = 2;
-	const IS_NULL = 3;
-	const IS_NUMERIC = 4;
-	const IS_STRING = 5;
-	const IS_UNKNOWN = 6;
+	const IS_BOOL = 16;
+	const IS_DATE_TIME = 4;
+	const IS_ERROR = 32;
+	const IS_NULL = 1;
+	const IS_NUMERIC = 2;
+	const IS_STRING = 8;
+	const IS_UNKNOWN = 0;
 };
 
 final class ChartLineFormattingType {
@@ -645,6 +645,8 @@ final class ColorType {
 final class CommentTitleType {
 	const CELL = 0;
 	const COMMENT = 1;
+	const NOTE = 2;
+	const REPLY = 3;
 };
 
 final class ConsolidationFunction {
@@ -1202,6 +1204,7 @@ final class FileFormatType {
 	const DOTM = 40;
 	const DOTX = 39;
 	const EMF = 258;
+	const EPUB = 775;
 	const EXCEL_2 = 25;
 	const EXCEL_3 = 24;
 	const EXCEL_4 = 23;
@@ -1770,6 +1773,7 @@ final class LoadDataFilterOptions {
 final class LoadFormat {
 	const AUTO = 0;
 	const CSV = 1;
+	const EPUB = 52;
 	const EXCEL_97_TO_2003 = 5;
 	const FODS = 59;
 	const HTML = 12;
@@ -2857,6 +2861,7 @@ final class SaveFormat {
 	const DIF = 30;
 	const DOCX = 62;
 	const EMF = 258;
+	const EPUB = 772;
 	const EXCEL_97_TO_2003 = 5;
 	const FODS = 59;
 	const GIF = 322;
@@ -3644,6 +3649,13 @@ class CellsFactory extends Java {
 	}
 }
 
+class CellValue extends Java {
+	static private $_className = "com.aspose.cells.CellValue";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
 class CellWatch extends Java {
 	static private $_className = "com.aspose.cells.CellWatch";
 	function __construct(...$argv) {
@@ -4265,6 +4277,13 @@ class CustomFilterCollection extends Java {
 	}
 }
 
+class CustomFunctionDefinition extends Java {
+	static private $_className = "com.aspose.cells.CustomFunctionDefinition";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
 class CustomProperty extends Java {
 	static private $_className = "com.aspose.cells.CustomProperty";
 	function __construct(...$argv) {
@@ -4327,6 +4346,20 @@ class DigitalSignatureCollection extends Java {
 
 class DocxSaveOptions extends Java {
 	static private $_className = "com.aspose.cells.DocxSaveOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class EbookLoadOptions extends Java {
+	static private $_className = "com.aspose.cells.EbookLoadOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class EbookSaveOptions extends Java {
+	static private $_className = "com.aspose.cells.EbookSaveOptions";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
