@@ -39,7 +39,7 @@ Aspose.Cells for PHP via Java consists of 2 individual parts, the script wrapper
 
 1. Install Tomcat on any location such as `\java\apache-tomcat-9.0.24`.
 2. Copy JavaBridge.war to `webapps` folder of Tomcat such as `\java\apache-tomcat-9.0.24\webapps`.
-3. Copy aspose-cells-xx.x.jar and bcprov-jdk15on-xxx.jar to `lib` folder such as `\java\apache-tomcat-9.0.24\lib`.
+3. Copy aspose-cells-xx.x.jar, bcpkix-jdk15on-xxx.jar and bcprov-jdk15on-xxx.jar to `lib` folder such as `\java\apache-tomcat-9.0.24\lib`.
 4. Run `\bin\startup.bat`, JavaBridge.war will be deployed to `\java\apache-tomcat-9.0.24\webapps\JavaBridge`.
 5. Test http://localhost:8080/JavaBridge/test.php to ensure that PHP works fine.
 6. Copy aspose.cells.php and example.php to `\java\apache-tomcat-9.0.24\webapps\JavaBridge`.

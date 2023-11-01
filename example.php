@@ -3,6 +3,9 @@
 require_once("http://localhost:8080/JavaBridge/java/Java.inc");
 require_once("aspose.cells.php");
 
+echo "Java version: ".java("java.lang.System")->getProperty("java.version");
+echo "\n";
+
 use aspose\cells;
 
 $workbook = new cells\Workbook();
