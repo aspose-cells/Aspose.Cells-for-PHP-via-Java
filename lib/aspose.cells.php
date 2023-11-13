@@ -1154,10 +1154,15 @@ final class ErrorCheckType {
 	const CALC = 1;
 	const CALCULATED_COLUMN = 129;
 	const EMPTY_CELL_REF = 2;
+	const EVALUATION_ERROR = 1;
 	const INCONSIST_FORMULA = 16;
 	const INCONSIST_RANGE = 8;
+	const NUMBER_STORED_AS_TEXT = 4;
+	const TABLE_DATA_VALIDATION = 128;
 	const TEXT_DATE = 32;
 	const TEXT_NUMBER = 4;
+	const TWO_DIGIT_TEXT_YEAR = 32;
+	const UNLOCKED_FORMULA = 64;
 	const UNPROCTED_FORMULA = 64;
 	const VALIDATION = 128;
 };
@@ -1399,24 +1404,24 @@ final class FontUnderlineType {
 };
 
 final class FormatConditionType {
-	const ABOVE_AVERAGE = 17;
-	const BEGINS_WITH = 10;
-	const CELL_VALUE = 0;
-	const COLOR_SCALE = 2;
-	const CONTAINS_BLANKS = 12;
-	const CONTAINS_ERRORS = 14;
-	const CONTAINS_TEXT = 8;
-	const DATA_BAR = 3;
-	const DUPLICATE_VALUES = 7;
-	const ENDS_WITH = 11;
-	const EXPRESSION = 1;
-	const ICON_SET = 4;
-	const NOT_CONTAINS_BLANKS = 13;
-	const NOT_CONTAINS_ERRORS = 15;
-	const NOT_CONTAINS_TEXT = 9;
-	const TIME_PERIOD = 16;
-	const TOP_10 = 5;
-	const UNIQUE_VALUES = 6;
+	const ABOVE_AVERAGE = 16384;
+	const BEGINS_WITH = 128;
+	const CELL_VALUE = 1;
+	const COLOR_SCALE = 32768;
+	const CONTAINS_BLANKS = 512;
+	const CONTAINS_ERRORS = 2048;
+	const CONTAINS_TEXT = 32;
+	const DATA_BAR = 65536;
+	const DUPLICATE_VALUES = 16;
+	const ENDS_WITH = 256;
+	const EXPRESSION = 2;
+	const ICON_SET = 131072;
+	const NOT_CONTAINS_BLANKS = 1024;
+	const NOT_CONTAINS_ERRORS = 4096;
+	const NOT_CONTAINS_TEXT = 64;
+	const TIME_PERIOD = 8192;
+	const TOP_10 = 4;
+	const UNIQUE_VALUES = 8;
 };
 
 final class FormatConditionValueType {
@@ -2268,6 +2273,10 @@ final class PasteType {
 
 final class PdfCompliance {
 	const NONE = 0;
+	const PDF_14 = 0;
+	const PDF_15 = 3;
+	const PDF_16 = 4;
+	const PDF_17 = 5;
 	const PDF_A_1_A = 2;
 	const PDF_A_1_B = 1;
 };
@@ -2333,6 +2342,13 @@ final class PivotFieldDataDisplayFormat {
 	const RANK_LARGEST_TO_SMALLEST = 14;
 	const RANK_SMALLEST_TO_LARGEST = 13;
 	const RUNNING_TOTAL_IN = 4;
+};
+
+final class PivotFieldGroupType {
+	const DATE_TIME_RANGE = 1;
+	const DISCRETE = 3;
+	const NONE = 0;
+	const NUMBERIC_RANGE = 2;
 };
 
 final class PivotFieldSubtotalType {
@@ -2433,6 +2449,7 @@ final class PivotGroupByType {
 	const HOURS = 3;
 	const MINUTES = 2;
 	const MONTHS = 5;
+	const NUMBERS = 0;
 	const QUARTERS = 6;
 	const RANGE_OF_VALUES = 0;
 	const SECONDS = 1;
@@ -3107,7 +3124,7 @@ final class SqlScriptOperatorType {
 
 final class StyleModifyFlag {
 	const ALIGNMENT_SETTINGS = 4161664;
-	const ALL = 234881012;
+	const ALL = 234881023;
 	const BACKGROUND_COLOR = 16777216;
 	const BORDERS = 16224;
 	const BOTTOM_BORDER = 2048;
@@ -3115,7 +3132,7 @@ final class StyleModifyFlag {
 	const DIAGONAL = 12288;
 	const DIAGONAL_DOWN_BORDER = 4096;
 	const DIAGONAL_UP_BORDER = 8192;
-	const FONT = 20;
+	const FONT = 31;
 	const FONT_CAP = 18;
 	const FONT_CHARSET = 10;
 	const FONT_COLOR = 3;
@@ -4284,6 +4301,13 @@ class CustomFunctionDefinition extends Java {
 	}
 }
 
+class CustomPiovtFieldGroupItem extends Java {
+	static private $_className = "com.aspose.cells.CustomPiovtFieldGroupItem";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
 class CustomProperty extends Java {
 	static private $_className = "com.aspose.cells.CustomProperty";
 	function __construct(...$argv) {
@@ -4630,6 +4654,10 @@ class Metered extends Java {
 	static function getConsumptionQuantity(...$argv) {
 		return Java(self::$_className)->getConsumptionQuantity(...$argv);
 	}
+
+	static function isMeteredLicensed(...$argv) {
+		return Java(self::$_className)->isMeteredLicensed(...$argv);
+	}
 }
 
 class MultipleFilterCollection extends Java {
@@ -4739,6 +4767,13 @@ class PivotAreaFilter extends Java {
 
 class PivotAreaFilterCollection extends Java {
 	static private $_className = "com.aspose.cells.PivotAreaFilterCollection";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class PivotFieldGroupSettings extends Java {
+	static private $_className = "com.aspose.cells.PivotFieldGroupSettings";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
@@ -5220,6 +5255,10 @@ class CellsHelper extends Java {
 
 	static function mergeFiles(...$argv) {
 		Java(self::$_className)->mergeFiles(...$argv);
+	}
+
+	static function needQuoteInFormula(...$argv) {
+		return Java(self::$_className)->needQuoteInFormula(...$argv);
 	}
 
 	static function rowIndexToName(...$argv) {
