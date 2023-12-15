@@ -15,6 +15,11 @@ final class AccessCacheOptions {
 	const VALIDATION = 33554441;
 };
 
+final class AdjustFontSizeForRowType {
+	const EMPTY_ROWS = 1;
+	const NONE = 0;
+};
+
 final class AutoFillType {
 	const COPY = 1;
 	const DEFAULT = 0;
@@ -2279,6 +2284,12 @@ final class PdfCompliance {
 	const PDF_17 = 5;
 	const PDF_A_1_A = 2;
 	const PDF_A_1_B = 1;
+	const PDF_A_2_A = 8;
+	const PDF_A_2_B = 6;
+	const PDF_A_2_U = 7;
+	const PDF_A_3_A = 11;
+	const PDF_A_3_B = 9;
+	const PDF_A_3_U = 10;
 };
 
 final class PdfCompressionCore {
