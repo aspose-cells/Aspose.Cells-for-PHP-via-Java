@@ -3015,6 +3015,11 @@ final class SlicerStyleType {
 	const SLICER_STYLE_OTHER_2 = 7;
 };
 
+final class SlideViewType {
+	const PRINT = 1;
+	const VIEW = 0;
+};
+
 final class SmartTagShowType {
 	const ALL = 0;
 	const NO_SMART_TAG_INDICATOR = 1;
