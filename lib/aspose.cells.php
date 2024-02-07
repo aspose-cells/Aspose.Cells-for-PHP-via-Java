@@ -1246,6 +1246,7 @@ final class FileFormatType {
 	const OTP = 61;
 	const OTS = 55;
 	const OTT = 53;
+	const OXPS = 776;
 	const PDF = 13;
 	const PNG = 262;
 	const POTM = 43;
@@ -3705,6 +3706,13 @@ class CellWatchCollection extends Java {
 
 class CharacterBulletValue extends Java {
 	static private $_className = "com.aspose.cells.CharacterBulletValue";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class ChartCalculateOptions extends Java {
+	static private $_className = "com.aspose.cells.ChartCalculateOptions";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
