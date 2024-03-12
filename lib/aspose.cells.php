@@ -897,16 +897,6 @@ final class DataLabelsSeparatorType {
 	const SPACE = 1;
 };
 
-final class DataLablesSeparatorType {
-	const AUTO = 0;
-	const COMMA = 2;
-	const CUSTOM = 6;
-	const NEW_LINE = 5;
-	const PERIOD = 4;
-	const SEMICOLON = 3;
-	const SPACE = 1;
-};
-
 final class DateTimeGroupingType {
 	const DAY = 0;
 	const HOUR = 1;
@@ -1205,6 +1195,7 @@ final class ExternalLinkType {
 };
 
 final class FileFormatType {
+	const AZW_3 = 777;
 	const BMP = 54;
 	const CSV = 1;
 	const DIF = 30;
@@ -1783,6 +1774,7 @@ final class LoadDataFilterOptions {
 
 final class LoadFormat {
 	const AUTO = 0;
+	const AZW_3 = 53;
 	const CSV = 1;
 	const EPUB = 52;
 	const EXCEL_97_TO_2003 = 5;
@@ -1849,6 +1841,12 @@ final class MapChartRegionType {
 final class MemorySetting {
 	const MEMORY_PREFERENCE = 1;
 	const NORMAL = 0;
+};
+
+final class MergeEmptyTdType {
+	const DEFAULT = 0;
+	const MERGE_FORCELY = 2;
+	const NONE = 1;
 };
 
 final class MetadataType {
@@ -2089,6 +2087,13 @@ final class OoxmlCompressionType {
 	const LEVEL_7 = 7;
 	const LEVEL_8 = 8;
 	const LEVEL_9 = 9;
+};
+
+final class OpenDocumentFormatVersionType {
+	const NONE = 0;
+	const ODF_11 = 1;
+	const ODF_12 = 2;
+	const ODF_13 = 3;
 };
 
 final class OperatorType {
@@ -3475,6 +3480,12 @@ final class ThemeColorType {
 	const TEXT_2 = 3;
 };
 
+final class TickLabelAlignmentType {
+	const CENTER = 0;
+	const LEFT = 1;
+	const RIGHT = 2;
+};
+
 final class TickLabelPositionType {
 	const HIGH = 0;
 	const LOW = 1;
@@ -3646,13 +3657,6 @@ class AutoFitterOptions extends Java {
 
 class AutoNumberedBulletValue extends Java {
 	static private $_className = "com.aspose.cells.AutoNumberedBulletValue";
-	function __construct(...$argv) {
-		parent::__construct(self::$_className, ...$argv);
-	}
-}
-
-class AxisBins extends Java {
-	static private $_className = "com.aspose.cells.AxisBins";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
