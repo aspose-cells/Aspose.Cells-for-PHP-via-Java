@@ -1258,6 +1258,7 @@ final class FileFormatType {
 	const UNKNOWN = 255;
 	const VSD = 36;
 	const VSDX = 37;
+	const WEB_P = 323;
 	const WMF = 259;
 	const X_HTML = 771;
 	const XLAM = 10;
@@ -2856,6 +2857,12 @@ final class RenameStrategy {
 	const LETTER = 2;
 };
 
+final class ReserveMissingPivotItemType {
+	const ALL = 1;
+	const DEFAULT = 0;
+	const NONE = 2;
+};
+
 final class ResourceLoadingType {
 	const DEFAULT = 0;
 	const SKIP = 1;
@@ -4368,6 +4375,13 @@ class DateTimeGroupItem extends Java {
 	}
 }
 
+class DeleteBlankOptions extends Java {
+	static private $_className = "com.aspose.cells.DeleteBlankOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
 class DeleteOptions extends Java {
 	static private $_className = "com.aspose.cells.DeleteOptions";
 	function __construct(...$argv) {
@@ -4821,6 +4835,13 @@ class PivotPageFields extends Java {
 	}
 }
 
+class PivotTableRefreshOption extends Java {
+	static private $_className = "com.aspose.cells.PivotTableRefreshOption";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
 class PowerQueryFormulaParameter extends Java {
 	static private $_className = "com.aspose.cells.PowerQueryFormulaParameter";
 	function __construct(...$argv) {
@@ -5022,6 +5043,13 @@ class SvgSaveOptions extends Java {
 	}
 }
 
+class SystemTimeInterruptMonitor extends Java {
+	static private $_className = "com.aspose.cells.SystemTimeInterruptMonitor";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
 class TableToRangeOptions extends Java {
 	static private $_className = "com.aspose.cells.TableToRangeOptions";
 	function __construct(...$argv) {
@@ -5045,6 +5073,13 @@ class ThemeColor extends Java {
 
 class ThreadedCommentAuthorCollection extends Java {
 	static private $_className = "com.aspose.cells.ThreadedCommentAuthorCollection";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class ThreadInterruptMonitor extends Java {
+	static private $_className = "com.aspose.cells.ThreadInterruptMonitor";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
