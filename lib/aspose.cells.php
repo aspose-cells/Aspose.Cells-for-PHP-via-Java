@@ -484,6 +484,14 @@ final class CellBorderType {
 	const THIN = 1;
 };
 
+final class CellsUnitType {
+	const CHARACTER = 7;
+	const CM = 6;
+	const INCH = 4;
+	const PIXEL = 1;
+	const POINT = 2;
+};
+
 final class CellValueFormatStrategy {
 	const CELL_STYLE = 1;
 	const DISPLAY_STRING = 3;
