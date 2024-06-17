@@ -2488,6 +2488,12 @@ final class PivotItemPosition {
 	const PREVIOUS = 0;
 };
 
+final class PivotItemPositionType {
+	const CUSTOM = 2;
+	const NEXT = 1;
+	const PREVIOUS = 0;
+};
+
 final class PivotMissingItemLimitType {
 	const AUTOMATIC = 0;
 	const MAX = 1;
