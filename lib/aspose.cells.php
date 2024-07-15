@@ -2911,6 +2911,7 @@ final class RevisionType {
 
 final class SaveFormat {
 	const AUTO = 0;
+	const AZW_3 = 773;
 	const BMP = 263;
 	const CSV = 1;
 	const DIF = 30;
@@ -3020,8 +3021,9 @@ final class SlicerCacheCrossFilterType {
 };
 
 final class SlicerCacheItemSortType {
-	const ASCENDING = 0;
-	const DESCENDING = 1;
+	const ASCENDING = 1;
+	const DESCENDING = 2;
+	const NATURAL = 0;
 };
 
 final class SlicerStyleType {
@@ -3758,6 +3760,10 @@ class Color extends Java {
 
 	static function fromArgb(...$argv) {
 		return Java(self::$_className)->fromArgb(...$argv);
+	}
+
+	static function fromName(...$argv) {
+		return Java(self::$_className)->fromName(...$argv);
 	}
 
 	static function getAliceBlue(...$argv) {
@@ -4849,6 +4855,13 @@ class PivotPageFields extends Java {
 	}
 }
 
+class PivotTableCalculateOption extends Java {
+	static private $_className = "com.aspose.cells.PivotTableCalculateOption";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
 class PivotTableRefreshOption extends Java {
 	static private $_className = "com.aspose.cells.PivotTableRefreshOption";
 	function __construct(...$argv) {
@@ -5392,6 +5405,14 @@ class ConditionalFormattingIcon extends Java {
 
 	static function getIconImageData(...$argv) {
 		return Java(self::$_className)->getIconImageData(...$argv);
+	}
+}
+
+class ConversionUtility extends Java {
+	static private $_className = "com.aspose.cells.ConversionUtility";
+
+	static function convert(...$argv) {
+		Java(self::$_className)->convert(...$argv);
 	}
 }
 
