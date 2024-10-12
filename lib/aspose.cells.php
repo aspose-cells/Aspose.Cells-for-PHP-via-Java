@@ -1103,33 +1103,53 @@ final class EquationMathematicalOperatorType {
 };
 
 final class EquationNodeType {
+	const ACCENT = 211;
 	const ACCENT_EQUATION = 211;
+	const ARRAY_EQUATION = 317;
+	const BAR = 212;
 	const BAR_EQUATION = 212;
 	const BASE = 100;
+	const BORDER_BOX = 213;
 	const BORDER_BOX_EQUATION = 213;
+	const BOX = 214;
 	const BOX_EQUATION = 214;
 	const DEGREE = 106;
+	const DELIMITER = 204;
 	const DELIMITER_EQUATION = 204;
 	const DENOMINATOR = 101;
 	const EQUATION_PARAGRAPH = 200;
+	const FRACTION = 202;
 	const FRACTION_EQUATION = 202;
+	const FUNCTION = 203;
 	const FUNCTION_EQUATION = 203;
 	const FUNCTION_NAME = 103;
 	const GROUP_CHARACTER_EQUATION = 215;
+	const GROUP_CHR = 215;
+	const LIMIT = 108;
+	const LOWER_LIMIT = 217;
+	const MATHEMATICAL = 201;
 	const MATHEMATICAL_EQUATION = 201;
+	const MATRIX = 216;
 	const MATRIX_EQUATION = 216;
 	const MATRIX_ROW = 107;
+	const NARY = 205;
 	const NARY_EQUATION = 205;
 	const NUMERATOR = 102;
+	const PRE_SUB_SUP = 210;
 	const PRE_SUB_SUP_EQUATION = 210;
+	const RADICAL = 206;
 	const RADICAL_EQUATION = 206;
+	const SUB = 208;
+	const SUB_SUP = 209;
 	const SUB_SUP_EQUATION = 209;
 	const SUBSCRIPT = 104;
 	const SUBSCRIPT_EQUATION = 208;
+	const SUP = 207;
 	const SUPERSCRIPT = 105;
 	const SUPERSCRIPT_EQUATION = 207;
 	const TEXT = 1;
 	const UN_KNOW = 0;
+	const UPPER_LIMIT = 218;
 };
 
 final class EquationVerticalJustificationType {
@@ -1197,6 +1217,14 @@ final class ExceptionType {
 	const UNSUPPORTED_STREAM = 21;
 };
 
+final class ExternalConnectionClassType {
+	const DATA_MODEL = 3;
+	const DATABASE = 0;
+	const TEXT_BASED = 2;
+	const UNKOWN = 4;
+	const WEB_QUERY = 1;
+};
+
 final class ExternalLinkType {
 	const DDE_LINK = 0;
 	const EXTERNAL = 1;
@@ -1205,6 +1233,7 @@ final class ExternalLinkType {
 final class FileFormatType {
 	const AZW_3 = 777;
 	const BMP = 54;
+	const CHM = 784;
 	const CSV = 1;
 	const DIF = 30;
 	const DOC = 31;
@@ -1239,6 +1268,7 @@ final class FileFormatType {
 	const ODP = 48;
 	const ODS = 14;
 	const ODT = 47;
+	const OLE = 64;
 	const OLE_10_NATIVE = 35;
 	const ONE_NOTE = 772;
 	const OOXML = 46;
@@ -1581,6 +1611,11 @@ final class HtmlLinkTargetType {
 	const TOP = 3;
 };
 
+final class HtmlOfficeMathOutputType {
+	const IMAGE = 0;
+	const MATH_ML = 1;
+};
+
 final class IconSetType {
 	const ARROWS_3 = 0;
 	const ARROWS_4 = 8;
@@ -1784,6 +1819,7 @@ final class LoadDataFilterOptions {
 final class LoadFormat {
 	const AUTO = 0;
 	const AZW_3 = 53;
+	const CHM = 54;
 	const CSV = 1;
 	const EPUB = 52;
 	const EXCEL_97_TO_2003 = 5;
@@ -1850,6 +1886,12 @@ final class MapChartRegionType {
 final class MemorySetting {
 	const MEMORY_PREFERENCE = 1;
 	const NORMAL = 0;
+};
+
+final class MergedCellsShrinkType {
+	const KEEP_HEADER_ONLY = 2;
+	const NONE = 0;
+	const SHRINK_TO_FIT = 1;
 };
 
 final class MergeEmptyTdType {
@@ -2077,6 +2119,7 @@ final class OLEDBCommandType {
 	const DEFAULT_INFORMATION = 4;
 	const NONE = 0;
 	const SQL_STATEMENT = 2;
+	const TABLE_COLLECTION = 6;
 	const TABLE_NAME = 3;
 	const WEB_BASED_LIST = 5;
 };
@@ -2494,10 +2537,22 @@ final class PivotItemPositionType {
 	const PREVIOUS = 0;
 };
 
+final class PivotLineType {
+	const BLANK = 3;
+	const GRAND_TOTAL = 2;
+	const REGULAR = 0;
+	const SUBTOTAL = 1;
+};
+
 final class PivotMissingItemLimitType {
 	const AUTOMATIC = 0;
 	const MAX = 1;
 	const NONE = 2;
+};
+
+final class PivotRefreshState {
+	const SUCCESS = 0;
+	const UNSUPPORTED_EXTERNAL_DATA_SOURCE = 1;
 };
 
 final class PivotTableAutoFormatType {
@@ -2529,6 +2584,14 @@ final class PivotTableSelectionType {
 	const DATA_AND_LABEL = 0;
 	const DATA_ONLY = 2;
 	const LABEL_ONLY = 1;
+};
+
+final class PivotTableSourceType {
+	const CONSOLIDATION = 4;
+	const EXTERNAL = 2;
+	const SCENARIO = 8;
+	const SHEET = 1;
+	const UNKNOWN = 9;
 };
 
 final class PivotTableStyleType {
@@ -2783,6 +2846,7 @@ final class PrintCommentsType {
 	const PRINT_IN_PLACE = 0;
 	const PRINT_NO_COMMENTS = 1;
 	const PRINT_SHEET_END = 2;
+	const PRINT_WITH_THREADED_COMMENTS = 3;
 };
 
 final class PrintErrorsType {
@@ -3065,6 +3129,7 @@ final class SortOnType {
 final class SortOrder {
 	const ASCENDING = 0;
 	const DESCENDING = 1;
+	const NATURAL = 2;
 };
 
 final class SparklineAxisMinMaxType {
