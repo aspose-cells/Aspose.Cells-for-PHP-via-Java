@@ -1173,6 +1173,19 @@ final class ErrorBarType {
 	const ST_ERROR = 4;
 };
 
+final class ErrorCellValueType {
+	const BLOCKED = 10;
+	const BUSY = 14;
+	const CALC = 13;
+	const CONNECT = 9;
+	const EXTERNAL = 18;
+	const FIELD = 12;
+	const NAME = 4;
+	const SPILL = 8;
+	const TIME_OUT = 19;
+	const UNKNOWN = 11;
+};
+
 final class ErrorCheckType {
 	const CALC = 1;
 	const CALCULATED_COLUMN = 129;
@@ -1191,12 +1204,16 @@ final class ErrorCheckType {
 };
 
 final class ExceptionType {
+	const AUTO_FILTER = 27;
 	const CHART = 0;
 	const CONDITIONAL_FORMATTING = 3;
 	const DATA_TYPE = 1;
 	const DATA_VALIDATION = 2;
+	const DEFINED_NAME = 25;
 	const FILE_CORRUPTED = 23;
 	const FILE_FORMAT = 4;
+	const FONT = 26;
+	const FONT_SUBSTITUTION = 28;
 	const FORMULA = 5;
 	const INCORRECT_PASSWORD = 8;
 	const INTERRUPTED = 17;
@@ -1380,6 +1397,14 @@ final class FillType {
 	const TEXTURE = 4;
 };
 
+final class FilterCategory {
+	const DATE = 3;
+	const LABEL = 1;
+	const NONE = 0;
+	const NUMBER_VALUE = 2;
+	const TOP_10 = 4;
+};
+
 final class FilterOperatorType {
 	const BEGINS_WITH = 7;
 	const CONTAINS = 9;
@@ -1390,7 +1415,9 @@ final class FilterOperatorType {
 	const LESS_OR_EQUAL = 0;
 	const LESS_THAN = 1;
 	const NONE = 6;
+	const NOT_BEGINS_WITH = 11;
 	const NOT_CONTAINS = 10;
+	const NOT_ENDS_WITH = 12;
 	const NOT_EQUAL = 4;
 };
 
@@ -2445,6 +2472,8 @@ final class PivotFieldType {
 };
 
 final class PivotFilterType {
+	const APRIL = 30;
+	const AUGUST = 34;
 	const CAPTION_BEGINS_WITH = 0;
 	const CAPTION_BETWEEN = 1;
 	const CAPTION_CONTAINS = 2;
@@ -2460,6 +2489,10 @@ final class PivotFilterType {
 	const CAPTION_NOT_ENDS_WITH = 12;
 	const CAPTION_NOT_EQUAL = 13;
 	const COUNT = 14;
+	const DATE_AFTER = 17;
+	const DATE_AFTER_OR_EQUAL = 18;
+	const DATE_BEFORE = 21;
+	const DATE_BEFORE_OR_EQUAL = 22;
 	const DATE_BETWEEN = 15;
 	const DATE_EQUAL = 16;
 	const DATE_NEWER_THAN = 17;
@@ -2468,6 +2501,11 @@ final class PivotFilterType {
 	const DATE_NOT_EQUAL = 20;
 	const DATE_OLDER_THAN = 21;
 	const DATE_OLDER_THAN_OR_EQUAL = 22;
+	const DECEMBER = 38;
+	const FEBRUARY = 28;
+	const JANUARY = 27;
+	const JULY = 33;
+	const JUNE = 32;
 	const LAST_MONTH = 23;
 	const LAST_QUARTER = 24;
 	const LAST_WEEK = 25;
@@ -2484,15 +2522,25 @@ final class PivotFilterType {
 	const M_7 = 33;
 	const M_8 = 34;
 	const M_9 = 35;
+	const MARCH = 29;
+	const MAY = 31;
 	const NEXT_MONTH = 39;
 	const NEXT_QUARTER = 40;
 	const NEXT_WEEK = 41;
 	const NEXT_YEAR = 42;
+	const NONE = 255;
+	const NOVEMBER = 37;
+	const OCTOBER = 36;
 	const PERCENT = 43;
 	const Q_1 = 44;
 	const Q_2 = 45;
 	const Q_3 = 46;
 	const Q_4 = 47;
+	const QUARTER_1 = 44;
+	const QUARTER_2 = 45;
+	const QUARTER_3 = 46;
+	const QUARTER_4 = 47;
+	const SEPTEMBER = 35;
 	const SUM = 48;
 	const THIS_MONTH = 49;
 	const THIS_QUARTER = 50;
@@ -2698,6 +2746,12 @@ final class PlotEmptyCellsType {
 	const INTERPOLATED = 2;
 	const NOT_PLOTTED = 0;
 	const ZERO = 1;
+};
+
+final class PowerQueryFormulaType {
+	const FORMULA = 0;
+	const FUNCTION = 1;
+	const PARAMETER = 2;
 };
 
 final class PresetCameraType {
@@ -2993,6 +3047,7 @@ final class SaveFormat {
 	const NUMBERS = 56;
 	const ODS = 14;
 	const OTS = 31;
+	const PCL = 1025;
 	const PDF = 13;
 	const PNG = 262;
 	const PPTX = 61;
@@ -3054,6 +3109,21 @@ final class ShapePathType {
 	const UNKNOWN = 7;
 };
 
+final class ShapeTextVerticalAlignmentType {
+	const BOTTOM = 2;
+	const BOTTOM_CENTERED = 5;
+	const CENTER = 7;
+	const CENTER_MIDDLE = 10;
+	const LEFT = 6;
+	const LEFT_MIDDLE = 9;
+	const MIDDLE = 1;
+	const MIDDLE_CENTERED = 4;
+	const RIGHT = 8;
+	const RIGHT_MIDDLE = 11;
+	const TOP = 0;
+	const TOP_CENTERED = 3;
+};
+
 final class SheetType {
 	const BIFF_4_MACRO = 3;
 	const CHART = 2;
@@ -3076,6 +3146,12 @@ final class ShowDropButtonType {
 	const ALWAYS = 2;
 	const FOCUS = 1;
 	const NEVER = 0;
+};
+
+final class SignatureType {
+	const CUSTOM = 3;
+	const DEFAULT = 0;
+	const STAMP = 1;
 };
 
 final class SlicerCacheCrossFilterType {
@@ -4843,6 +4919,13 @@ class PasteOptions extends Java {
 	}
 }
 
+class PclSaveOptions extends Java {
+	static private $_className = "com.aspose.cells.PclSaveOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
 class PdfBookmarkEntry extends Java {
 	static private $_className = "com.aspose.cells.PdfBookmarkEntry";
 	function __construct(...$argv) {
@@ -4929,13 +5012,6 @@ class PivotTableCalculateOption extends Java {
 
 class PivotTableRefreshOption extends Java {
 	static private $_className = "com.aspose.cells.PivotTableRefreshOption";
-	function __construct(...$argv) {
-		parent::__construct(self::$_className, ...$argv);
-	}
-}
-
-class PowerQueryFormulaParameter extends Java {
-	static private $_className = "com.aspose.cells.PowerQueryFormulaParameter";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
@@ -5270,13 +5346,6 @@ class WorkbookPrintingPreview extends Java {
 
 class WorkbookRender extends Java {
 	static private $_className = "com.aspose.cells.WorkbookRender";
-	function __construct(...$argv) {
-		parent::__construct(self::$_className, ...$argv);
-	}
-}
-
-class WriteProtection extends Java {
-	static private $_className = "com.aspose.cells.WriteProtection";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
