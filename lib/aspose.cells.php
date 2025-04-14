@@ -374,11 +374,15 @@ final class BevelType {
 
 final class BorderType {
 	const BOTTOM_BORDER = 8;
+	const DIAGONAL = 48;
 	const DIAGONAL_DOWN = 16;
 	const DIAGONAL_UP = 32;
+	const DYNAMIC_STYLE_BORDERS = 192;
 	const HORIZONTAL = 128;
 	const LEFT_BORDER = 1;
+	const NONE = 0;
 	const RIGHT_BORDER = 2;
+	const SIDE_BORDERS = 15;
 	const TOP_BORDER = 4;
 	const VERTICAL = 64;
 };
@@ -1252,6 +1256,7 @@ final class FileFormatType {
 	const BMP = 54;
 	const CHM = 784;
 	const CSV = 1;
+	const DBF = 515;
 	const DIF = 30;
 	const DOC = 31;
 	const DOCM = 38;
@@ -1429,6 +1434,13 @@ final class FilterType {
 	const MULTIPLE_FILTERS = 3;
 	const NONE = 6;
 	const TOP_10 = 5;
+};
+
+final class FontFileFormatType {
+	const OTF = 2;
+	const TTC = 3;
+	const TTF = 1;
+	const UNKNOWN = 0;
 };
 
 final class FontSchemeType {
@@ -1643,6 +1655,12 @@ final class HtmlOfficeMathOutputType {
 	const MATH_ML = 1;
 };
 
+final class HtmlVersion {
+	const DEFAULT = 0;
+	const HTML_5 = 2;
+	const X_HTML = 1;
+};
+
 final class IconSetType {
 	const ARROWS_3 = 0;
 	const ARROWS_4 = 8;
@@ -1848,6 +1866,8 @@ final class LoadFormat {
 	const AZW_3 = 53;
 	const CHM = 54;
 	const CSV = 1;
+	const DBF = 515;
+	const DIF = 30;
 	const EPUB = 52;
 	const EXCEL_97_TO_2003 = 5;
 	const FODS = 59;
@@ -1855,6 +1875,7 @@ final class LoadFormat {
 	const IMAGE = 254;
 	const JSON = 513;
 	const M_HTML = 13;
+	const MARKDOWN = 55;
 	const NUMBERS = 56;
 	const ODS = 14;
 	const OTS = 31;
@@ -1883,6 +1904,7 @@ final class LookAtType {
 
 final class LookInType {
 	const COMMENTS = 3;
+	const FORMATTED_VALUES = 6;
 	const FORMULAS = 0;
 	const ONLY_FORMULAS = 4;
 	const ORIGINAL_VALUES = 5;
@@ -1908,6 +1930,12 @@ final class MapChartRegionType {
 	const COUNTRY_REGION_LIST = 2;
 	const DATA_ONLY = 1;
 	const WORLD = 3;
+};
+
+final class MarkdownTableHeaderType {
+	const COLUMN_HEADER = 1;
+	const EMPTY = 2;
+	const FIRST_ROW = 0;
 };
 
 final class MemorySetting {
@@ -3032,6 +3060,7 @@ final class SaveFormat {
 	const AZW_3 = 773;
 	const BMP = 263;
 	const CSV = 1;
+	const DBF = 515;
 	const DIF = 30;
 	const DOCX = 62;
 	const EMF = 258;
@@ -3075,6 +3104,19 @@ final class SelectionType {
 	const EXTEND = 2;
 	const MULTI = 1;
 	const SINGLE = 0;
+};
+
+final class SensitivityLabelAssignmentType {
+	const PRIVILEGED = 1;
+	const STANDARD = 0;
+};
+
+final class SensitivityLabelMarkType {
+	const ENCRYPTION = 8;
+	const FOOTER = 2;
+	const HEADER = 1;
+	const NONE = 0;
+	const WATERMARK = 4;
 };
 
 final class ShapeAnchorType {
@@ -3318,6 +3360,7 @@ final class StyleModifyFlag {
 	const DIAGONAL = 12288;
 	const DIAGONAL_DOWN_BORDER = 4096;
 	const DIAGONAL_UP_BORDER = 8192;
+	const DYNAMIC_STYLE_BORDERS = 96;
 	const FONT = 31;
 	const FONT_CAP = 18;
 	const FONT_CHARSET = 10;
@@ -3345,6 +3388,7 @@ final class StyleModifyFlag {
 	const INDENT = 131072;
 	const LEFT_BORDER = 256;
 	const LOCKED = 67108864;
+	const NONE = 0;
 	const NUMBER_FORMAT = 16384;
 	const PATTERN = 4194304;
 	const PROTECTION_SETTINGS = 201326592;
@@ -3352,11 +3396,17 @@ final class StyleModifyFlag {
 	const RIGHT_BORDER = 512;
 	const ROTATION = 262144;
 	const SHRINK_TO_FIT = 1048576;
+	const SIDE_BORDERS = 3840;
 	const TEXT_DIRECTION = 2097152;
 	const TOP_BORDER = 1024;
 	const VERTICAL_ALIGNMENT = 65536;
 	const VERTICAL_BORDER = 64;
 	const WRAP_TEXT = 524288;
+};
+
+final class SvgEmbeddedFontType {
+	const NONE = 0;
+	const WOFF = 1;
 };
 
 final class TableDataSourceType {
@@ -3807,6 +3857,13 @@ final class XAdESType {
 
 class AboveAverage extends Java {
 	static private $_className = "com.aspose.cells.AboveAverage";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class AbstractLowCodeProtectionProvider extends Java {
+	static private $_className = "com.aspose.cells.AbstractLowCodeProtectionProvider";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
@@ -4536,6 +4593,20 @@ class DateTimeGroupItem extends Java {
 	}
 }
 
+class DbfLoadOptions extends Java {
+	static private $_className = "com.aspose.cells.DbfLoadOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class DbfSaveOptions extends Java {
+	static private $_className = "com.aspose.cells.DbfSaveOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
 class DeleteBlankOptions extends Java {
 	static private $_className = "com.aspose.cells.DeleteBlankOptions";
 	function __construct(...$argv) {
@@ -4545,6 +4616,13 @@ class DeleteBlankOptions extends Java {
 
 class DeleteOptions extends Java {
 	static private $_className = "com.aspose.cells.DeleteOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class DifLoadOptions extends Java {
+	static private $_className = "com.aspose.cells.DifLoadOptions";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
@@ -4635,6 +4713,10 @@ class FontConfigs extends Java {
 
 	static function getDefaultFontName(...$argv) {
 		return Java(self::$_className)->getDefaultFontName(...$argv);
+	}
+
+	static function getFontFileDataInfo(...$argv) {
+		return Java(self::$_className)->getFontFileDataInfo(...$argv);
 	}
 
 	static function getFontSources(...$argv) {
@@ -4818,6 +4900,69 @@ class LoadFilter extends Java {
 
 class LoadOptions extends Java {
 	static private $_className = "com.aspose.cells.LoadOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class LowCodeHtmlSaveOptions extends Java {
+	static private $_className = "com.aspose.cells.LowCodeHtmlSaveOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class LowCodeImageSaveOptions extends Java {
+	static private $_className = "com.aspose.cells.LowCodeImageSaveOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class LowCodeLoadOptions extends Java {
+	static private $_className = "com.aspose.cells.LowCodeLoadOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class LowCodeMergeOptions extends Java {
+	static private $_className = "com.aspose.cells.LowCodeMergeOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class LowCodePdfSaveOptions extends Java {
+	static private $_className = "com.aspose.cells.LowCodePdfSaveOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class LowCodeSaveOptions extends Java {
+	static private $_className = "com.aspose.cells.LowCodeSaveOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class LowCodeSaveOptionsProviderOfAssembling extends Java {
+	static private $_className = "com.aspose.cells.LowCodeSaveOptionsProviderOfAssembling";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class LowCodeSaveOptionsProviderOfPlaceHolders extends Java {
+	static private $_className = "com.aspose.cells.LowCodeSaveOptionsProviderOfPlaceHolders";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class LowCodeSplitOptions extends Java {
+	static private $_className = "com.aspose.cells.LowCodeSplitOptions";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
@@ -5059,6 +5204,13 @@ class RevisionHeader extends Java {
 	}
 }
 
+class SensitivityLabelCollection extends Java {
+	static private $_className = "com.aspose.cells.SensitivityLabelCollection";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
 class SeriesLayoutProperties extends Java {
 	static private $_className = "com.aspose.cells.SeriesLayoutProperties";
 	function __construct(...$argv) {
@@ -5199,6 +5351,13 @@ class Style extends Java {
 
 class StyleFlag extends Java {
 	static private $_className = "com.aspose.cells.StyleFlag";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class SvgImageOptions extends Java {
+	static private $_className = "com.aspose.cells.SvgImageOptions";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
@@ -5634,6 +5793,22 @@ class FileFormatUtil extends Java {
 	}
 }
 
+class HtmlConverter extends Java {
+	static private $_className = "com.aspose.cells.HtmlConverter";
+
+	static function process(...$argv) {
+		Java(self::$_className)->process(...$argv);
+	}
+}
+
+class ImageConverter extends Java {
+	static private $_className = "com.aspose.cells.ImageConverter";
+
+	static function process(...$argv) {
+		Java(self::$_className)->process(...$argv);
+	}
+}
+
 class ImageFormat extends Java {
 	static private $_className = "com.aspose.cells.ImageFormat";
 
@@ -5679,6 +5854,62 @@ class ImageFormat extends Java {
 
 	static function getWmf(...$argv) {
 		return Java(self::$_className)->getWmf(...$argv);
+	}
+}
+
+class JsonConverter extends Java {
+	static private $_className = "com.aspose.cells.JsonConverter";
+
+	static function process(...$argv) {
+		Java(self::$_className)->process(...$argv);
+	}
+}
+
+class PdfConverter extends Java {
+	static private $_className = "com.aspose.cells.PdfConverter";
+
+	static function process(...$argv) {
+		Java(self::$_className)->process(...$argv);
+	}
+}
+
+class SpreadsheetConverter extends Java {
+	static private $_className = "com.aspose.cells.SpreadsheetConverter";
+
+	static function process(...$argv) {
+		Java(self::$_className)->process(...$argv);
+	}
+}
+
+class SpreadsheetLocker extends Java {
+	static private $_className = "com.aspose.cells.SpreadsheetLocker";
+
+	static function process(...$argv) {
+		Java(self::$_className)->process(...$argv);
+	}
+}
+
+class SpreadsheetMerger extends Java {
+	static private $_className = "com.aspose.cells.SpreadsheetMerger";
+
+	static function process(...$argv) {
+		Java(self::$_className)->process(...$argv);
+	}
+}
+
+class SpreadsheetSplitter extends Java {
+	static private $_className = "com.aspose.cells.SpreadsheetSplitter";
+
+	static function process(...$argv) {
+		Java(self::$_className)->process(...$argv);
+	}
+}
+
+class TextConverter extends Java {
+	static private $_className = "com.aspose.cells.TextConverter";
+
+	static function process(...$argv) {
+		Java(self::$_className)->process(...$argv);
 	}
 }
 
