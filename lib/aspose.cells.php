@@ -1939,6 +1939,7 @@ final class MarkdownTableHeaderType {
 };
 
 final class MemorySetting {
+	const FILE_CACHE = 2;
 	const MEMORY_PREFERENCE = 1;
 	const NORMAL = 0;
 };
@@ -4568,6 +4569,13 @@ class CustomProperty extends Java {
 	}
 }
 
+class CustomRenderSettings extends Java {
+	static private $_className = "com.aspose.cells.CustomRenderSettings";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
 class DataSorterKeyCollection extends Java {
 	static private $_className = "com.aspose.cells.DataSorterKeyCollection";
 	function __construct(...$argv) {
@@ -5524,13 +5532,6 @@ class XlsSaveOptions extends Java {
 	}
 }
 
-class XmlColumnProperty extends Java {
-	static private $_className = "com.aspose.cells.XmlColumnProperty";
-	function __construct(...$argv) {
-		parent::__construct(self::$_className, ...$argv);
-	}
-}
-
 class XmlLoadOptions extends Java {
 	static private $_className = "com.aspose.cells.XmlLoadOptions";
 	function __construct(...$argv) {
@@ -5590,6 +5591,10 @@ class CellsHelper extends Java {
 
 	static function getAltStartPath(...$argv) {
 		return Java(self::$_className)->getAltStartPath(...$argv);
+	}
+
+	static function getCacheFolder(...$argv) {
+		return Java(self::$_className)->getCacheFolder(...$argv);
 	}
 
 	static function getCustomImplementationFactory(...$argv) {
@@ -5654,6 +5659,10 @@ class CellsHelper extends Java {
 
 	static function setAltStartPath(...$argv) {
 		Java(self::$_className)->setAltStartPath(...$argv);
+	}
+
+	static function setCacheFolder(...$argv) {
+		Java(self::$_className)->setCacheFolder(...$argv);
 	}
 
 	static function setCloudPlatform(...$argv) {
