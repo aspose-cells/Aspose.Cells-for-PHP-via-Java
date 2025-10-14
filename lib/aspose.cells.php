@@ -513,6 +513,22 @@ final class CellValueType {
 	const IS_UNKNOWN = 0;
 };
 
+final class ChartColorPaletteType {
+	const MONOCHROMATIC_PALETTE_1 = 1;
+	const MONOCHROMATIC_PALETTE_10 = 10;
+	const MONOCHROMATIC_PALETTE_11 = 11;
+	const MONOCHROMATIC_PALETTE_12 = 12;
+	const MONOCHROMATIC_PALETTE_13 = 13;
+	const MONOCHROMATIC_PALETTE_2 = 2;
+	const MONOCHROMATIC_PALETTE_3 = 3;
+	const MONOCHROMATIC_PALETTE_4 = 4;
+	const MONOCHROMATIC_PALETTE_5 = 5;
+	const MONOCHROMATIC_PALETTE_6 = 6;
+	const MONOCHROMATIC_PALETTE_7 = 7;
+	const MONOCHROMATIC_PALETTE_8 = 8;
+	const MONOCHROMATIC_PALETTE_9 = 9;
+};
+
 final class ChartLineFormattingType {
 	const AUTOMATIC = 0;
 	const GRADIENT = 3;
@@ -1270,6 +1286,7 @@ final class FileFormatType {
 	const EXCEL_4 = 23;
 	const EXCEL_95 = 22;
 	const EXCEL_97_TO_2003 = 5;
+	const FLAT_OPC = 516;
 	const FODS = 59;
 	const G_ZIP = 35615;
 	const GIF = 322;
@@ -1620,6 +1637,11 @@ final class HtmlCrossType {
 	const DEFAULT = 0;
 	const FIT_TO_CELL = 4;
 	const MS_EXPORT = 1;
+};
+
+final class HtmlEmbeddedFontType {
+	const NONE = 0;
+	const WOFF = 1;
 };
 
 final class HtmlExportDataOptions {
@@ -3056,6 +3078,11 @@ final class RevisionType {
 	const UNKNOWN = 13;
 };
 
+final class SaveElementType {
+	const ALL = 251658239;
+	const CHART = 256;
+};
+
 final class SaveFormat {
 	const AUTO = 0;
 	const AZW_3 = 773;
@@ -3141,14 +3168,19 @@ final class ShapeLockType {
 	const UNGROUP = 9;
 };
 
+final class ShapePathPointValueType {
+	const ANGLE = 1;
+	const POSITION = 0;
+};
+
 final class ShapePathType {
 	const ARC_TO = 6;
-	const CLOSE = 3;
-	const CUBIC_BEZIER_CURVE_TO = 1;
+	const CLOSE = 128;
+	const CUBIC_BEZIER_CURVE_TO = 3;
 	const END = 4;
 	const ESCAPE = 5;
-	const LINE_TO = 0;
-	const MOVE_TO = 2;
+	const LINE_TO = 1;
+	const MOVE_TO = 0;
 	const UNKNOWN = 7;
 };
 
@@ -3195,6 +3227,12 @@ final class SignatureType {
 	const CUSTOM = 3;
 	const DEFAULT = 0;
 	const STAMP = 1;
+};
+
+final class SignificantDigitsType {
+	const DIGITS_15 = 0;
+	const G_17 = 1;
+	const ROUNDING_17 = 2;
 };
 
 final class SlicerCacheCrossFilterType {
@@ -4976,6 +5014,13 @@ class LowCodeSplitOptions extends Java {
 	}
 }
 
+class MarkdownLoadOptions extends Java {
+	static private $_className = "com.aspose.cells.MarkdownLoadOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
 class MarkdownSaveOptions extends Java {
 	static private $_className = "com.aspose.cells.MarkdownSaveOptions";
 	function __construct(...$argv) {
@@ -5621,6 +5666,10 @@ class CellsHelper extends Java {
 		return Java(self::$_className)->getSignificantDigits(...$argv);
 	}
 
+	static function getSignificantDigitsType(...$argv) {
+		return Java(self::$_className)->getSignificantDigitsType(...$argv);
+	}
+
 	static function getStartupPath(...$argv) {
 		return Java(self::$_className)->getStartupPath(...$argv);
 	}
@@ -5683,6 +5732,10 @@ class CellsHelper extends Java {
 
 	static function setSignificantDigits(...$argv) {
 		Java(self::$_className)->setSignificantDigits(...$argv);
+	}
+
+	static function setSignificantDigitsType(...$argv) {
+		Java(self::$_className)->setSignificantDigitsType(...$argv);
 	}
 
 	static function setStartupPath(...$argv) {
