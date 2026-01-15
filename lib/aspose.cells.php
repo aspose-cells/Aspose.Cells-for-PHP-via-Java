@@ -633,7 +633,6 @@ final class ChartType {
 	const RADAR = 57;
 	const RADAR_FILLED = 59;
 	const RADAR_WITH_DATA_MARKERS = 58;
-	const RADIAL_HISTOGRAM = 81;
 	const SCATTER = 60;
 	const SCATTER_CONNECTED_BY_CURVES_WITH_DATA_MARKER = 61;
 	const SCATTER_CONNECTED_BY_CURVES_WITHOUT_DATA_MARKER = 62;
@@ -895,6 +894,11 @@ final class DataBarFillType {
 final class DataBarNegativeColorType {
 	const COLOR = 0;
 	const SAME_AS_POSITIVE = 1;
+};
+
+final class DataBarRenderMode {
+	const BACKGROUND_COLOR = 1;
+	const IMAGE = 2;
 };
 
 final class DataLabelShapeType {
@@ -1665,6 +1669,11 @@ final class HtmlHiddenRowDisplayType {
 	const REMOVE = 1;
 };
 
+final class HtmlLayoutMode {
+	const NORMAL = 0;
+	const PRINT = 1;
+};
+
 final class HtmlLinkTargetType {
 	const BLANK = 0;
 	const PARENT = 1;
@@ -1746,6 +1755,12 @@ final class InputMethodEditorMode {
 	const NO_CONTROL = 0;
 	const OFF = 2;
 	const ON = 1;
+};
+
+final class ItemsWithNoDataShowMode {
+	const LAST = 1;
+	const NATURAL = 2;
+	const NONE = 0;
 };
 
 final class JsonExportHyperlinkType {
@@ -3241,12 +3256,6 @@ final class SlicerCacheCrossFilterType {
 	const SHOW_ITEMS_WITH_NO_DATA = 2;
 };
 
-final class SlicerCacheItemSortType {
-	const ASCENDING = 1;
-	const DESCENDING = 2;
-	const NATURAL = 0;
-};
-
 final class SlicerStyleType {
 	const CUSTOM = 14;
 	const SLICER_STYLE_DARK_1 = 8;
@@ -3764,6 +3773,13 @@ final class TiffCompression {
 final class TiffPhotometricInterpretation {
 	const BLACKISZERO = 1;
 	const WHITEISZERO = 0;
+};
+
+final class TimelineLevelType {
+	const DAY = 3;
+	const MONTH = 2;
+	const QUARTER = 1;
+	const YEAR = 0;
 };
 
 final class TimePeriodType {
@@ -4595,13 +4611,6 @@ class CustomFunctionDefinition extends Java {
 
 class CustomPiovtFieldGroupItem extends Java {
 	static private $_className = "com.aspose.cells.CustomPiovtFieldGroupItem";
-	function __construct(...$argv) {
-		parent::__construct(self::$_className, ...$argv);
-	}
-}
-
-class CustomProperty extends Java {
-	static private $_className = "com.aspose.cells.CustomProperty";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
