@@ -1204,10 +1204,13 @@ final class ErrorCellValueType {
 	const CONNECT = 9;
 	const EXTERNAL = 18;
 	const FIELD = 12;
+	const NA = 6;
 	const NAME = 4;
+	const REF = 3;
 	const SPILL = 8;
 	const TIME_OUT = 19;
 	const UNKNOWN = 11;
+	const VALUE = 1;
 };
 
 final class ErrorCheckType {
@@ -1684,6 +1687,11 @@ final class HtmlLinkTargetType {
 final class HtmlOfficeMathOutputType {
 	const IMAGE = 0;
 	const MATH_ML = 1;
+};
+
+final class HtmlParagraphLayoutMode {
+	const AS_ROW = 1;
+	const NORMAL = 0;
 };
 
 final class HtmlVersion {
@@ -2239,6 +2247,7 @@ final class OpenDocumentFormatVersionType {
 	const ODF_11 = 1;
 	const ODF_12 = 2;
 	const ODF_13 = 3;
+	const ODF_14 = 4;
 };
 
 final class OperatorType {
@@ -3479,7 +3488,10 @@ final class TableStyleElementType {
 	const GRAND_TOTAL_ROW = 29;
 	const HEADER_ROW = 9;
 	const LAST_COLUMN = 7;
+	const LAST_COLUMN_SUBHEADING = 130;
 	const LAST_HEADER_CELL = 12;
+	const LAST_ROW_SUBHEADING = 131;
+	const LAST_SUBTOTAL_ROW = 133;
 	const LAST_TOTAL_CELL = 14;
 	const PAGE_FIELD_LABELS = 1;
 	const PAGE_FIELD_VALUES = 2;
@@ -5973,6 +5985,14 @@ class SpreadsheetSplitter extends Java {
 
 	static function process(...$argv) {
 		Java(self::$_className)->process(...$argv);
+	}
+}
+
+class TableStyle extends Java {
+	static private $_className = "com.aspose.cells.TableStyle";
+
+	static function create(...$argv) {
+		return Java(self::$_className)->create(...$argv);
 	}
 }
 
