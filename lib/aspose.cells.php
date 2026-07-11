@@ -1309,15 +1309,18 @@ final class FileFormatType {
 	const NUMBERS = 56;
 	const NUMBERS_09 = 56;
 	const NUMBERS_35 = 62;
+	const ODB = 1026;
 	const ODF = 49;
 	const ODG = 50;
 	const ODP = 48;
 	const ODS = 14;
 	const ODT = 47;
+	const OFD = 1029;
 	const OLE = 64;
 	const OLE_10_NATIVE = 35;
 	const ONE_NOTE = 772;
 	const OOXML = 46;
+	const OTG = 1025;
 	const OTP = 61;
 	const OTS = 55;
 	const OTT = 53;
@@ -1458,6 +1461,11 @@ final class FilterType {
 	const MULTIPLE_FILTERS = 3;
 	const NONE = 6;
 	const TOP_10 = 5;
+};
+
+final class FilterValueType {
+	const IS_DATE_TIME = 4;
+	const IS_STRING = 8;
 };
 
 final class FontFileFormatType {
@@ -1694,10 +1702,20 @@ final class HtmlParagraphLayoutMode {
 	const NORMAL = 0;
 };
 
+final class HtmlSpaceMode {
+	const CHARACTER = 0;
+	const CSS = 1;
+};
+
 final class HtmlVersion {
 	const DEFAULT = 0;
 	const HTML_5 = 2;
 	const X_HTML = 1;
+};
+
+final class HyperlinkLoadMode {
+	const ALLOW_MULTIPLE = 1;
+	const NORMAL = 0;
 };
 
 final class IconSetType {
@@ -2474,6 +2492,14 @@ final class PdfOptimizationType {
 	const STANDARD = 0;
 };
 
+final class PdfZoomBehavior {
+	const FIT_HEIGHT = 4;
+	const FIT_PAGE = 2;
+	const FIT_WIDTH = 3;
+	const NONE = 0;
+	const ZOOM_FACTOR = 1;
+};
+
 final class PivotAreaType {
 	const ALL = 3;
 	const BUTTON = 5;
@@ -2823,6 +2849,14 @@ final class PlotEmptyCellsType {
 	const ZERO = 1;
 };
 
+final class PowerQueryFormulaItemType {
+	const FUNCTION = 1;
+	const LIST = 3;
+	const LITERAL = 4;
+	const PARAMETER = 2;
+	const UNKNOWN = 0;
+};
+
 final class PowerQueryFormulaType {
 	const FORMULA = 0;
 	const FUNCTION = 1;
@@ -3127,6 +3161,7 @@ final class SaveFormat {
 	const MARKDOWN = 57;
 	const NUMBERS = 56;
 	const ODS = 14;
+	const OFD = 1026;
 	const OTS = 31;
 	const PCL = 1025;
 	const PDF = 13;
@@ -3174,6 +3209,12 @@ final class SensitivityLabelMarkType {
 final class ShapeAnchorType {
 	const ONE_CELL_ANCHOR = 1;
 	const TWO_CELL_ANCHOR = 0;
+};
+
+final class ShapeDisplayType {
+	const ALL = 0;
+	const NONE = 2;
+	const PLACEHOLDERS = 1;
 };
 
 final class ShapeLockType {
@@ -3357,6 +3398,7 @@ final class SparklineType {
 	const COLUMN = 1;
 	const LINE = 0;
 	const STACKED = 2;
+	const WIN_LOSS = 2;
 };
 
 final class SqlDataType {
@@ -5119,6 +5161,13 @@ class OdsPageBackground extends Java {
 
 class OdsSaveOptions extends Java {
 	static private $_className = "com.aspose.cells.OdsSaveOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class OfdSaveOptions extends Java {
+	static private $_className = "com.aspose.cells.OfdSaveOptions";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
