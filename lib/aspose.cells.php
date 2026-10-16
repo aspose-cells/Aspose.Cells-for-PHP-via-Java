@@ -1230,6 +1230,12 @@ final class ErrorCheckType {
 	const VALIDATION = 128;
 };
 
+final class ExcelRenderingBehavior {
+	const ALL = -1;
+	const CELL_TEXT_LENGTH_LIMIT = 1;
+	const NONE = 0;
+};
+
 final class ExceptionType {
 	const AUTO_FILTER = 27;
 	const CHART = 0;
@@ -2546,6 +2552,7 @@ final class PivotFieldGroupType {
 	const DISCRETE = 3;
 	const NONE = 0;
 	const NUMBERIC_RANGE = 2;
+	const NUMERIC_RANGE = 2;
 };
 
 final class PivotFieldSubtotalType {
@@ -2663,15 +2670,16 @@ final class PivotFilterType {
 };
 
 final class PivotGroupByType {
-	const DAYS = 4;
-	const HOURS = 3;
-	const MINUTES = 2;
-	const MONTHS = 5;
-	const NUMBERS = 0;
-	const QUARTERS = 6;
-	const RANGE_OF_VALUES = 0;
-	const SECONDS = 1;
-	const YEARS = 7;
+	const DATE_TIMES = 254;
+	const DAYS = 16;
+	const HOURS = 8;
+	const MINUTES = 4;
+	const MONTHS = 32;
+	const NUMBERS = 1;
+	const QUARTERS = 64;
+	const RANGE_OF_VALUES = 1;
+	const SECONDS = 2;
+	const YEARS = 128;
 };
 
 final class PivotItemPosition {
@@ -4758,6 +4766,13 @@ class DigitalSignatureCollection extends Java {
 	}
 }
 
+class DiscreteGroupItem extends Java {
+	static private $_className = "com.aspose.cells.DiscreteGroupItem";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
 class DocxSaveOptions extends Java {
 	static private $_className = "com.aspose.cells.DocxSaveOptions";
 	function __construct(...$argv) {
@@ -5250,6 +5265,20 @@ class PivotAreaFilterCollection extends Java {
 	}
 }
 
+class PivotCacheMissingItemsLimitConst extends Java {
+	static private $_className = "com.aspose.cells.PivotCacheMissingItemsLimitConst";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class PivotFieldGroupOptions extends Java {
+	static private $_className = "com.aspose.cells.PivotFieldGroupOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
 class PivotFieldGroupSettings extends Java {
 	static private $_className = "com.aspose.cells.PivotFieldGroupSettings";
 	function __construct(...$argv) {
@@ -5278,8 +5307,22 @@ class PivotTableCalculateOption extends Java {
 	}
 }
 
+class PivotTableCreateOptions extends Java {
+	static private $_className = "com.aspose.cells.PivotTableCreateOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
 class PivotTableRefreshOption extends Java {
 	static private $_className = "com.aspose.cells.PivotTableRefreshOption";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class PivotViewToJsonOptions extends Java {
+	static private $_className = "com.aspose.cells.PivotViewToJsonOptions";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
@@ -5294,6 +5337,13 @@ class PowerQueryFormulaParameterCollection extends Java {
 
 class PptxSaveOptions extends Java {
 	static private $_className = "com.aspose.cells.PptxSaveOptions";
+	function __construct(...$argv) {
+		parent::__construct(self::$_className, ...$argv);
+	}
+}
+
+class Range extends Java {
+	static private $_className = "com.aspose.cells.Range";
 	function __construct(...$argv) {
 		parent::__construct(self::$_className, ...$argv);
 	}
