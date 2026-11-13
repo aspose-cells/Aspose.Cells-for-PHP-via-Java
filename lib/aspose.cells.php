@@ -2682,12 +2682,6 @@ final class PivotGroupByType {
 	const YEARS = 128;
 };
 
-final class PivotItemPosition {
-	const CUSTOM = 2;
-	const NEXT = 1;
-	const PREVIOUS = 0;
-};
-
 final class PivotItemPositionType {
 	const CUSTOM = 2;
 	const NEXT = 1;
@@ -2710,6 +2704,24 @@ final class PivotMissingItemLimitType {
 final class PivotRefreshState {
 	const SUCCESS = 0;
 	const UNSUPPORTED_EXTERNAL_DATA_SOURCE = 1;
+};
+
+final class PivotShowValuesAsType {
+	const DIFFERENCE_FROM = 1;
+	const INDEX = 8;
+	const NORMAL = 0;
+	const PERCENTAGE_DIFFERENCE_FROM = 3;
+	const PERCENTAGE_OF = 2;
+	const PERCENTAGE_OF_COLUMN = 6;
+	const PERCENTAGE_OF_PARENT_COLUMN_TOTAL = 10;
+	const PERCENTAGE_OF_PARENT_ROW_TOTAL = 9;
+	const PERCENTAGE_OF_PARENT_TOTAL = 11;
+	const PERCENTAGE_OF_ROW = 5;
+	const PERCENTAGE_OF_RUNNING_TOTAL_IN = 12;
+	const PERCENTAGE_OF_TOTAL = 7;
+	const RANK_LARGEST_TO_SMALLEST = 14;
+	const RANK_SMALLEST_TO_LARGEST = 13;
+	const RUNNING_TOTAL_IN = 4;
 };
 
 final class PivotTableAutoFormatType {
@@ -4893,7 +4905,6 @@ class FormulaParseOptions extends Java {
 		parent::__construct(self::$_className, ...$argv);
 	}
 }
-
 class GlobalizationSettings extends Java {
 	static private $_className = "com.aspose.cells.GlobalizationSettings";
 	function __construct(...$argv) {
